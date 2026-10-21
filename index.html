@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-courses Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/mc.css">
+<style>
+  .pick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+  .pick a{display:block;text-decoration:none;color:var(--txt);background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:24px;transition:transform .2s,border-color .2s}
+  .pick a:hover{transform:translateY(-4px);border-color:var(--lime)}
+  .pick .ic{font-size:44px}
+  .pick b{display:block;font-family:Unbounded,sans-serif;font-size:20px;margin:8px 0 6px}
+  .pick p{margin:0 0 12px;color:#cfd3e2;font-size:15px}
+  .pick span{color:var(--lime);font-weight:700}
+  @media (max-width:700px){.pick{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="kicker">Tutor training · Multi-courses</span>
+    <h1>Multi-<span>courses</span></h1>
+    <p class="lead">Shorter, topic-focused courses taught in the Parallel Lessons format. Choose a category to meet its courses.</p>
+  </header>
+  <div class="pick">
+    <a href="Creative_Courses/index.html"><div class="ic">🎨</div><b>Creative Courses</b><p>Video Editing · Music · Pixel Lab</p><span>Start →</span></a>
+    <a href="Coding_Courses/index.html"><div class="ic">💻</div><b>Coding &amp; Technology Courses</b><p>Vibe Coding · Science via Minecraft</p><span>Start →</span></a>
+  </div>
+</main>
+<footer class="foot">kodland · Multi-courses training</footer>
+</body>
+</html>

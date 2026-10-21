@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coding & Technology Courses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/mc.css">
+</head>
+<body>
+<div id="app"></div>
+
+<!-- 1) Texts of the chosen language: index.html?lang=it loads content/it.js (default: English) -->
+<script>
+  (function(){
+    var q = ((location.search.match(/[?&]lang=([a-z-]+)/i) || [])[1] || 'en').toLowerCase();
+    document.write('<script src="content/' + q + '.js"><\/script>');
+  })();
+</script>
+<script>
+  // File missing or with an error? Fall back to English
+  if (!window.MC_CONTENT) document.write('<script src="content/en.js"><\/script>');
+</script>
+<!-- 2) The engine (no texts inside), shared by both trainings -->
+<script src="../assets/mc-engine.js"></script>
+</body>
+</html>
