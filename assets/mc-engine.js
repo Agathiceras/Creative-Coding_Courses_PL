@@ -166,6 +166,8 @@
 
         <div class="block story"><h4>${L.story}</h4>${c.story}</div>
 
+        ${c.outcomes ? `<div class="block outcomes"><h4>${L.outcomes}</h4><ul class="outs">${c.outcomes.map(o => `<li>${o}</li>`).join('')}</ul></div>` : ''}
+
         <div class="block"><h4>${L.programme}</h4><p class="muted">${c.programmeIntro}</p>${prog}</div>
 
         <div class="block"><h4>${L.build}</h4><div class="flips small">${c.build.map(b => flip(b[0], b[1], b[2])).join('')}</div></div>

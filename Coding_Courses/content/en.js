@@ -40,13 +40,13 @@ window.MC_CONTENT = {
       cards: [
         ["⏱️", "Shorter", "Each course is short and focused on one topic, so students reach a finished, real project quickly."],
         ["🧭", "Explore", "Students can try different subjects — coding, science, video, music, pixel art — and discover what they enjoy most."],
-        ["🧩", "Connected", "Some courses work together: for example, the runner game students build in Vibe Coding can use the graphics they draw in Pixel Lab."]
+        ["🧩", "Connected", "Some courses work together: for example, the runner game students build in Vibe Coding can use the graphics they draw in Pixel Art."]
       ],
       catsTitle: "Two categories, two trainings",
       youAreHere: "This training",
       otherTraining: "Separate training",
       cats: [
-        { icon: "🎨", name: "Creative Courses", courses: ["Video Editing", "Music", "Pixel Lab"], current: false },
+        { icon: "🎨", name: "Creative Courses", courses: ["Video Creation", "Sound Design", "Pixel Art"], current: false },
         { icon: "💻", name: "Coding & Technology Courses", courses: ["Vibe Coding", "Science via Minecraft"], current: true }
       ],
       pl: "<b>Taught in the PL format.</b> Everything you learned in the Parallel Lessons training applies: individual openings and closings, independent work with the cards, help when a student raises their hand, and feedback in the closing."
@@ -62,6 +62,7 @@ window.MC_CONTENT = {
     course: {
       story: "📖 The story of the course",
       programme: "🗂️ Lessons",
+      outcomes: "🎯 Learning outcomes",
       build: "🏆 What students create",
       pl: "⚡ In your parallel lessons",
       platform: "🖥️ Platform and tools",
@@ -97,57 +98,42 @@ window.MC_CONTENT = {
       icon: "🤖",
       name: "Vibe Coding",
       label: "Coding & Technology course",
-      tagline: "AI Coding Lab for Games: build your own Runner game with the help of AI.",
-      facts: [["Age", "10+"], ["Lessons", "3 with a tutor + 1 self-study lesson"], ["Lesson length", "50 min"], ["Level", "Beginner — no coding experience"], ["Platform", "Kodland Sparks + an AI chat"]],
-      story: "<p>From the very first lesson, students <b>create their own Runner game with AI</b>. With every lesson the game evolves: it gets new mechanics, a new interface, a new look — until it becomes a complete, personalised project published on Kodland Sparks.</p><p>Students don’t just learn to write prompts: they also start to <b>understand the structure of the code</b>, splitting the game into HTML, CSS and JavaScript. They work the way modern teams build projects with AI: <b>create → test → improve</b>.</p><p>The golden rule of the course: <b>the programmer directs the AI, not the other way round</b>.</p>",
-      programmeIntro: "3 lessons with you, plus a lesson the student does on their own. Open each lesson:",
+      tagline: "Build your first runner game with AI — and learn how coding with AI works.",
+      facts: [["Lessons", "5"], ["Lesson length", "60 min"], ["Level", "Beginner — no coding experience"], ["Platform", "AI Vibe Coding in Kodland Sparks"]],
+      story: "<p>Students build their <b>first runner game with AI</b> and learn how coding with AI works. They learn to write <b>clear prompts</b> that AI turns into code, and they add new features to the game.</p><p>There is <b>no need to learn syntax</b>: students test the result, describe the bug and ask AI to fix it. Everything happens in <b>AI Vibe Coding in Kodland Sparks</b>. No coding experience is needed. By the end, each student has a game with their own style, hero and environment, split into <b>HTML, CSS and JavaScript</b>, and a project page in Sparks.</p>",
+      outcomes: [
+        "Write clear prompts and split a big task into small ones.",
+        "Build a working browser game with AI: jump, obstacles, score, Game Over and Restart.",
+        "Find bugs and fix them by talking to AI.",
+        "Understand what HTML, CSS and JavaScript do.",
+        "Publish the game and build a project page in Sparks."
+      ],
+      programmeIntro: "5 lessons of 60 minutes. Open each lesson:",
       programme: [
-        { n: "Lesson 1", title: "Let’s create a Runner game",
-          details: [
-            ["🎯", "Mission", "Get to know AI Vibe Coding and create the first working version of the game."],
-            ["🛠️", "What the student does", "Learns what AI Vibe Coding is, writes simple instructions for the AI, generates a Runner game, runs it in the browser, checks the character, the obstacles and the score, and fixes the first errors with the AI’s help."],
-            ["💡", "What they learn", "What a prompt is for and how to write clear instructions · AI doesn’t always generate perfect code on the first try · good results come from several iterations · the programmer directs the AI."],
-            ["🧑‍💻", "Self-study activity", "Ask the AI to change the speed of the game or add a new obstacle."],
-            ["⭐", "Optional task", "Create another version of the Runner with a different visual style."]
-          ],
-          result: "A working Runner game (runner_v1)." },
-        { n: "Lesson 2", title: "Let’s improve the game",
-          details: [
-            ["🎯", "Mission", "Learn to improve the game with new prompts."],
-            ["🛠️", "What the student does", "Learns the rules of a good prompt, asks the AI to add new features, fixes errors through a dialogue with the AI, improves the interface, adjusts the difficulty and tests every change."],
-            ["💡", "What they learn", "A good prompt gives better results · it’s better to split a complex task into small steps · the AI can modify or regenerate the code · developing a game means improving it constantly · test every change before moving on."],
-            ["🧑‍💻", "Self-study activity", "Add an improvement of their own to the game."],
-            ["⭐", "Optional task", "Create 2–3 new mechanics with the help of AI."]
-          ],
-          result: "A Runner game with new mechanics (runner_v2)." },
-        { n: "Lesson 3", title: "Let’s personalise the game",
-          details: [
-            ["🎯", "Mission", "Get to know the structure of a web project and completely transform the look of the game."],
-            ["🛠️", "What the student does", "Learns what HTML, CSS and JavaScript are, splits the project into the three files, learns the role of each one, changes the colours and styles, and replaces the main character with their own image — AI-generated or downloaded."],
-            ["💡", "What they learn", "HTML holds the structure of the page, CSS the design, JavaScript the logic · separate files make a project easier to organise and edit · the look can change without changing the logic."],
-            ["🧑‍💻", "Self-study activity", "Completely transform the visual style of the game."]
-          ],
-          result: "A personalised version of the Runner game (runner_final)." },
-        { n: "Self-study", title: "Extra lesson on their own", details: [["🧑‍💻", "Self-study lesson", "An additional lesson the student completes independently, without a live session."]] }
+        { n: "Lesson 1", title: "First Runner with AI", details: [["", "Students learn what vibe coding is, write their first prompt and get a working game with a hero, obstacles and a score. They run it in the browser and fix the first bugs with AI."]] },
+        { n: "Lesson 2", title: "Prompts and New Features", details: [["", "The rules of a good prompt. Students add mechanics, tune the difficulty and the interface, and test every change."]] },
+        { n: "Lesson 3", title: "Style, Structure and Hero", details: [["", "Students split the project into HTML, CSS and JavaScript and learn what each file does. They change colours and styles and put their own hero into the game."]] },
+        { n: "Lesson 4", title: "Game Environment", details: [["", "Students add a background and new obstacles: they generate images or draw them and connect them to the project. Then they check that the mechanics still work."]] },
+        { n: "Lesson 5", title: "Final Project: Project Page", details: [["", "Students polish the game: they check that everything works, write a description and rules, publish the game on a project page in Sparks and show it to the tutor and other students."]] }
       ],
       build: [
-        ["🏃", "runner_v1", "The first working version of the Runner game, created on Kodland Sparks."],
-        ["⚙️", "runner_v2", "An improved version with new features and mechanics."],
-        ["📄", "index.html + css + js", "The whole game page in a single file, with CSS and JavaScript inside."],
-        ["🗂️", "index.html · style.css · script.js", "The game split into three files: structure, design and logic."],
-        ["🧍", "player.png", "The image of their own main character."],
-        ["🏁", "runner_final", "The final, personalised version of the game, published on Kodland Sparks."]
+        ["🏃", "A first runner game", "A working game with a hero, obstacles and a score, made from their first prompt and run in the browser."],
+        ["⚙️", "New mechanics", "Features added with prompts, with the difficulty and the interface tuned — and every change tested."],
+        ["🗂️", "HTML, CSS and JavaScript", "The project split into three files, so each part has its own job."],
+        ["🧍", "Their own hero", "Their own character, with their own colours and styles, put into the game."],
+        ["🌄", "A game environment", "A background and new obstacles, generated or drawn and connected to the project."],
+        ["🏁", "A project page in Sparks", "The final game, with a description and rules, shown to the tutor and other students."]
       ],
       pl: [
-        "Each lesson lasts <b>50 minutes</b>. In your opening, set the mission of the day: create, improve or personalise the game.",
+        "Each lesson lasts <b>60 minutes</b>. In your opening, set the goal of the day: the first game, new features, style and structure, the environment or the final project.",
         "When a student raises their hand because “the AI broke the game”, don’t fix the code for them: ask <b>what prompt they wrote</b> and help them make it clearer, or split the task into smaller steps.",
         "Remind them to <b>test every change</b> before asking for the next one — it’s the core habit of the course.",
         "In the <b>closing</b>, the student plays their game for you and you give specific feedback: what works, and one improvement for the next prompt.",
-        "The final version is <b>published on Kodland Sparks</b>. The extra lesson is <b>self-study</b>: there’s no live session for it."
+        "In lesson 5, students polish the game, write a description and rules, and publish it on a project page in <b>Kodland Sparks</b>."
       ],
       platform: {
-        text: "Students build the game on <b>Kodland Sparks</b> (AI Vibe Coding), in a <b>Game or web app</b> project with a live preview and the HTML, CSS and JS tabs. They can also use <b>any AI chat</b>.",
-        tools: ["Kodland Sparks · Game or web app", "AI tutor", "Any AI chat", "HTML · CSS · JavaScript"],
+        text: "Students build the game in <b>AI Vibe Coding</b>, inside <b>Kodland Sparks</b>, in a <b>Game or web app</b> project with a live preview and the HTML, CSS and JS tabs. They write prompts, test the game, describe the bugs and ask AI to fix them. The final game goes on a project page in Sparks.",
+        tools: ["Kodland Sparks · Game or web app", "AI tutor", "HTML · CSS · JavaScript"],
         tour: "vibe",
         tourText: "Open Studio, start a Game or web app project, and see the live preview, the code tabs and the AI tutor."
       },
@@ -166,62 +152,69 @@ window.MC_CONTENT = {
       icon: "🧪",
       name: "Science via Minecraft",
       label: "Coding & Technology course",
-      tagline: "Explore, experiment and discover: Minecraft Education becomes a virtual science lab.",
-      facts: [["Age", "8–9"], ["Lessons", "40 (5 modules)"], ["Lesson length", "60 min"], ["Level", "Beginner"], ["Platform", "Minecraft Education"]],
-      story: "<p>This course turns <b>Minecraft Education</b> into a fully equipped <b>virtual science laboratory</b>. Students learn essential <b>physics, chemistry and biology</b> through hands-on experiments and discovery.</p><p>In the safe, playful world of Minecraft, they run experiments that would be <b>too dangerous, complex or costly</b> in a traditional classroom: they build circuits, synthesise compounds, study ecosystems, explore space and investigate the laws of our world. Step by step, they learn to <b>think like real researchers</b> — and to tell the difference between game logic and reality.</p><p>No previous knowledge of science or programming is needed; familiarity with Minecraft helps, but isn’t essential.</p>",
-      programmeIntro: "5 modules. The detailed lesson list is still being finalised. Open each module:",
+      tagline: "Ask a question, guess the answer, run an experiment and check the result — in Minecraft.",
+      facts: [["Age", "8–9"], ["Lessons", "5"], ["Lesson length", "60 min"], ["Level", "Beginner"], ["Platform", "Minecraft Java Edition (Kodland launcher)"]],
+      story: "<p>Students learn <b>science by running experiments in Minecraft</b>. In one campus world they turn sand into glass and lava into stone, test how things slide and fall, grow plants and jump on the Moon. Each time they use the <b>scientific method</b>: ask a question, guess the answer, run an experiment and check the result.</p><p>In some lessons students use <b>artifacts</b>. An artifact is a small datapack that changes a rule of the world, such as the speed of time or gravity. Students change one number and see what happens. In the last lesson they make their own artifact from a template.</p><p>Students play <b>Minecraft Java Edition</b> in the Kodland launcher. No science or programming experience is needed. By the end, each student has their own experiment, an artifact and a report on a project page in Sparks.</p>",
+      outcomes: [
+        "Use the scientific method: ask a question, make a hypothesis, run an experiment and draw a conclusion.",
+        "Explain how materials change when we heat them or mix them with water.",
+        "Test forces and motion: friction, falling, bouncing and speed.",
+        "Explain what plants need to grow and how animals in a food chain depend on each other.",
+        "Compare gravity on the Earth, the Moon and Mars, and find which rocks and ores lie at which depth.",
+        "Make an artifact from a template and publish it with an experiment report in Sparks."
+      ],
+      programmeIntro: "5 lessons of 60 minutes. Open each lesson:",
       programme: [
-        { n: "Module 1", title: "The Science Lab — Getting Started", details: [["", "Minecraft Education’s science tools, the scientific method, elements and simple compounds."]] },
-        { n: "Module 2", title: "The Physics Workshop — Building and Experimenting", details: [["", "Electricity, circuits, physical forces and motion, through Redstone and mechanical builds."]] },
-        { n: "Module 3", title: "The Living World — Biology and Ecology", details: [["", "Ecosystems, habitats, food chains and sustainable design."]] },
-        { n: "Module 4", title: "Advanced Science — Experiments and Exploration", details: [["", "Chemistry, physics and biology together, in complex projects that include space exploration and geology."]] },
-        { n: "Module 5", title: "The Grand Science Project — Bringing Ideas to Life", details: [["", "A final, independent science project from concept to completion, presented to you and to the student’s parents."]] }
+        { n: "Lesson 1", title: "The Science Lab", details: [["", "Students who have not installed the launcher yet do it with the tutor. Then everyone enters the campus world and learns the scientific method. Students test how materials change: sand turns into glass, lava and water make stone, concrete powder hardens in water. For each test they write a hypothesis and a result in a lab book."]] },
+        { n: "Lesson 2", title: "Forces and Motion", details: [["", "Students test friction: how far they slide on ice, blue ice and dirt. They watch sand and gravel fall, bounce on slime blocks and send minecarts down powered rails. Then they compare the results and explain which force changes the motion."]] },
+        { n: "Lesson 3", title: "The Living World", details: [["", "Students grow plants in light and in darkness, with water and without it. The time artifact speeds up time, so they see the result within one lesson. At the end they look at short food chains: wolves and sheep, foxes and chickens, bees and flowers."]] },
+        { n: "Lesson 4", title: "Space and Earth", details: [["", "Students use the gravity artifact to jump on the Earth, the Moon and Mars and compare how high they go. Then they go down a mine and find which rocks and ores lie at which depth."]] },
+        { n: "Lesson 5", title: "The Grand Science Project", details: [["", "Students choose a topic from lessons 1–4, make their own artifact from a template and run their own experiment. They publish the artifact and a report on a project page in Sparks and show it to the tutor and other students."]] }
       ],
       extra: {
         title: "🔬 The scientific method — tap each step",
         intro: "Every experiment in the course follows the same four steps. They are the heart of the course:",
         hint: "Tap a step to see what the student does.",
         steps: [
-          ["👀", "Observation", "The student looks at a phenomenon in the world and asks a question about it."],
-          ["💡", "Hypothesis", "They make a guess they can test: “I think that… because…”."],
-          ["⚗️", "Experiment", "They design and run an experiment in Minecraft Education — a circuit, a compound, a habitat."],
-          ["📝", "Conclusion", "They analyse the results, record them with the in-game camera and journal, and explain what they found."]
+          ["❓", "Question", "The student looks at something in the world and asks a question about it."],
+          ["💡", "Hypothesis", "They guess the answer in a way they can test: “I think that… because…”."],
+          ["⚗️", "Experiment", "They run an experiment in Minecraft — heat a material, test a slope, grow a plant, jump on the Moon."],
+          ["📝", "Conclusion", "They check the result against their guess, write it in the lab book and explain what they found."]
         ]
       },
       build: [
-        ["⚡", "Working circuits", "Electrical circuits built with Redstone, to understand electricity, signals and logic gates."],
-        ["🧪", "Chemical compounds", "Glow sticks, ice bombs and other compounds, made with the Element Constructor and Compound Creator."],
-        ["🌍", "Sustainable habitats", "Habitats and farms that give living things food, water, shelter and space."],
-        ["🪨", "Rocks and minerals", "Rocks and minerals analysed and identified by their properties."],
-        ["📸", "Experiment records", "Findings documented with the in-game camera and journal."],
-        ["🏆", "The Grand Science Project", "A final independent project, presented to the tutor and parents."]
+        ["📒", "A lab book", "A hypothesis and a result for every test, starting in lesson 1."],
+        ["🔥", "Material experiments", "Sand turned into glass, lava and water turned into stone, concrete powder hardening in water."],
+        ["🛷", "Forces and motion tests", "Sliding on ice, blue ice and dirt, falling sand and gravel, slime blocks and minecarts on powered rails."],
+        ["🌱", "A plant-growth experiment", "Plants grown in light and darkness, with and without water, with the time artifact speeding things up."],
+        ["🌙", "Gravity jumps and a mine", "Jumps on the Earth, the Moon and Mars, and a trip down a mine to find which rocks and ores lie at which depth."],
+        ["🏆", "Their own artifact and report", "An artifact made from a template, published with an experiment report on a project page in Sparks."]
       ],
       pl: [
-        "Students are <b>8–9 years old</b>: in the first lessons, check carefully that they can move around Minecraft Education and from one card to the next on their own.",
-        "Every experiment is <b>individual</b>: each student runs and documents their own investigation.",
+        "Students are <b>8–9 years old</b>: in the first lessons, check carefully that they can move around Minecraft and from one card to the next on their own. Students who come without the launcher install it <b>with you in lesson 1</b>.",
+        "Every experiment is <b>individual</b>: each student runs their own tests and keeps their own lab book.",
         "When a student calls you, <b>guide with questions</b> — “What do you think will happen? Why?” — instead of giving the result: the goal is to think like a scientist.",
         "In the <b>closing</b>, ask the student to explain their experiment and their conclusion, and point out the differences between what happens in Minecraft and in real life.",
-        "Tutors need a computer with <b>16 GB of RAM or more</b> — see the technical requirements below."
+        "Tablets, phones and Chromebooks are <b>not supported</b>: check the technical requirements below before the first lesson."
       ],
       platform: {
-        text: "The course takes place in <b>Minecraft Education</b>, not on Kodland Sparks. Students use its science tools: the <b>Element Constructor</b>, the <b>Material Reducer</b> and the <b>Compound Creator</b> for chemistry, <b>Redstone</b> for circuits, and the in-game <b>camera and journal</b> to document their findings.",
-        tools: ["Minecraft Education", "Element Constructor", "Material Reducer", "Compound Creator", "Redstone", "Camera & journal"],
+        text: "Students play <b>Minecraft Java Edition</b> in the <b>Kodland launcher</b>, in one campus world. In some lessons they use <b>artifacts</b> — small datapacks that change a rule of the world, like the speed of time or gravity — and in the last lesson they make their own from a template. Their experiment, artifact and report go on a project page in <b>Kodland Sparks</b>.",
+        tools: ["Minecraft Java Edition", "Kodland launcher", "Artifacts (datapacks)", "Lab book", "Kodland Sparks · Project page"],
         tour: null,
         /* url: link to the launcher instructions */
         launcher: {
-          title: "The Minecraft Education launcher",
-          text: "Students — and you — open the course through a launcher. Follow the instructions to download and set it up. <b>Even though this course doesn’t use Kodland Sparks, the credentials to download the launcher are the same as for Kodland Sparks.</b>",
+          title: "The Kodland launcher",
+          text: "Students — and you — open the course through the Kodland launcher. We send the link before the first lesson; follow the instructions to download and set it up. <b>The credentials to download the launcher are the same as for Kodland Sparks.</b>",
           btn: "📄 Open the launcher instructions ↗",
           url: "https://portfolio.kodland.org/launcher/download#guide"
         }
       },
       /* [icon, text] */
       requirements: [
-        ["🖥️", "<b>Operating system:</b> Windows 10 or later, macOS 12 (Monterey) or later, or ChromeOS 114 or later"],
-        ["🌐", "<b>Browser:</b> Google Chrome"],
-        ["🧠", "<b>RAM:</b> 8 GB or more for students — <b>16 GB or more for tutors</b>"],
-        ["⚙️", "<b>CPU:</b> Intel Core i3-4150 / Celeron N4100 or better, or AMD A8-6600K or better"],
-        ["🎮", "<b>GPU:</b> integrated Intel HD Graphics 4400 / AMD Radeon R5 (OpenGL 4.4+), or discrete Nvidia GeForce 400 / AMD Radeon HD 8000 series (OpenGL 4.4+)"]
+        ["💻", "<b>Device:</b> a laptop or desktop computer with a keyboard and mouse — <b>tablets, phones and Chromebooks are not supported</b>"],
+        ["🖥️", "<b>Operating system:</b> Windows 10 or later, macOS 13 or later"],
+        ["🧠", "<b>RAM:</b> 8 GB or more"],
+        ["🚀", "<b>Software:</b> the Kodland launcher. We send the link before the first lesson; students who come without it install it with the tutor in lesson 1."]
       ]
     }
   ]
