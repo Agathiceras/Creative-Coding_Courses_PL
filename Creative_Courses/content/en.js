@@ -81,9 +81,9 @@ window.MC_CONTENT = {
 
     final: {
       title: "Finish the training",
-      soonTitle: "Coming soon to BO",
-      soon: "<p>These courses are <b>being translated</b> right now. As soon as they’re ready, <b>the bot will notify you</b> that they’ve been <b>enabled in BO</b>. From then on, you’ll find them — and their Teacher Notes — just like your other PL courses.</p>",
-      lmsTitle: "You’ve finished reviewing the Creative Courses!",
+      soonTitle: "You’ve explored all the Creative Courses!",
+      soon: "<p>These courses are <b>being translated</b> right now.</p><p>As soon as they’re ready, <b>the bot will notify you</b> that the courses have been <b>enabled in BO</b>. From then on, you’ll find them — and their Teacher Notes — just like your other PL courses.</p><p>Thank you for getting ready! 💜</p>",
+      lmsTitle: "One last step: the test in the LMS",
       lms: "<p>Return to the <b>LMS training page</b> where you accessed this training. The <b>DST test</b> is available right below the training.</p><p>👉 You must complete and pass the DST test for the training to be considered successfully completed. If you do not complete the DST test, the training will remain incomplete and may expire.</p><p>The minimum passing score is <b>80%</b>.</p><p>Good luck! ❤️</p>"
     }
   },
