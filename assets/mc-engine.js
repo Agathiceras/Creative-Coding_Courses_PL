@@ -10,7 +10,7 @@
   const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, k) => v[k] !== undefined ? v[k] : m);
 
   /* ---------- progress (saved in this browser) ---------- */
-  let S = { pl:false, open:0, seen:{}, tours:{} };
+  let S = { pl:false, open:0, seen:{}, tours:{}, finished:false };
   try { const saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) S = Object.assign(S, saved); } catch(e){}
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} };
   const seenCount = () => C.courses.filter(c => S.seen[c.id]).length;
@@ -66,7 +66,7 @@
 
         <section class="sec" id="sec-final">
           <h2><i>4</i>${U.final.title}</h2>
-          <div class="card soon-card"><div class="soon-ic">📣</div><div><h3>${U.final.soonTitle}</h3>${U.final.soon}</div></div>
+          <div class="card soon-card"><div class="soon-ic">🎉</div><div><h3>${U.final.soonTitle}</h3>${U.final.soon}</div></div>
           <div class="card lms-card"><div class="final-ic">📝</div><h3>${U.final.lmsTitle}</h3>${U.final.lms}</div>
         </section>
       </div>
@@ -204,7 +204,8 @@
       document.querySelectorAll('.m-step').forEach((b, k) => b.classList.toggle('on', k === i));
       $('#mText').innerHTML = `<b>${c.extra.steps[i][1]}</b> ${c.extra.steps[i][2]}`;
     }
-    if (act === 'final') $('#sec-final').scrollIntoView({ behavior:'smooth', block:'start' });
+    // The final messages appear only after "Finish the training" in the last course
+    if (act === 'final'){ S.finished = true; save(); renderFinal(); $('#sec-final').scrollIntoView({ behavior:'smooth', block:'start' }); }
   });
   $('#plCheck').addEventListener('change', e => { S.pl = e.target.checked; save(); renderGate(); });
 
@@ -216,6 +217,8 @@
     const b = $('#tourBadge'); if (b && C.courses[S.open].id === c.id){ b.classList.add('on'); b.textContent = U.course.tourDone; }
   });
 
+  function renderFinal(){ $('#sec-final').style.display = S.finished ? '' : 'none'; }
+
   if (S.open >= C.courses.length) S.open = 0;
-  renderGate(); renderCourse();
+  renderGate(); renderCourse(); renderFinal();
 })();
