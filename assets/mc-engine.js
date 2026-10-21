@@ -3,6 +3,7 @@
    Used by Creative_Courses and Coding_Courses.
    ===================================================================== */
 (function(){
+  if (!window.MC_CONTENT) return; // redirecting to the version selector
   const C = window.MC_CONTENT, U = C.ui;
   const $ = s => document.querySelector(s);
   const SPARKS_TOUR = '../sparks-sim/Kodland_Sparks_Tour.html';

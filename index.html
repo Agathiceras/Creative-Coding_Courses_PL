@@ -15,21 +15,81 @@
   .pick b{display:block;font-family:Unbounded,sans-serif;font-size:20px;margin:8px 0 6px}
   .pick p{margin:0 0 12px;color:#cfd3e2;font-size:15px}
   .pick span{color:var(--lime);font-weight:700}
+  .badge{display:inline-grid;place-items:center;min-width:48px;height:48px;padding:0 10px;border-radius:14px;background:var(--lime);color:var(--ink);font-family:Unbounded,sans-serif;font-weight:800;font-size:18px}
+  .region-tag{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#cfd3e2;font-weight:600}
+  .region-tag .badge{min-width:38px;height:38px;font-size:14px;border-radius:11px}
+  .ver-back{display:inline-block;margin-top:26px;color:var(--lime);font-weight:700;text-decoration:none}
+  .ver-back:hover{text-decoration:underline}
+  .ver-back[hidden]{display:none}
   @media (max-width:700px){.pick{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main>
   <header class="hero">
-    <span class="kicker">Tutor training · Multi-courses</span>
+    <span class="kicker" id="kicker"></span>
     <h1>Multi-<span>courses</span></h1>
-    <p class="lead">Shorter, topic-focused courses taught in the Parallel Lessons format. Choose a category to meet its courses.</p>
+    <p class="lead" id="lead"></p>
+    <div id="regionTag"></div>
   </header>
-  <div class="pick">
-    <a href="Creative_Courses/index.html"><div class="ic">🎨</div><b>Creative Courses</b><p>Video Creation · Sound Design · Pixel Art</p><span>Start →</span></a>
-    <a href="Coding_Courses/index.html"><div class="ic">💻</div><b>Coding &amp; Technology Courses</b><p>Vibe Coding · Science via Minecraft</p><span>Start →</span></a>
-  </div>
+  <div class="pick" id="pick"></div>
+  <a class="ver-back" id="back" href="index.html" hidden></a>
 </main>
-<footer class="foot">kodland · Multi-courses training</footer>
+<footer class="foot" id="foot"></footer>
+
+<script>
+/* =====================================================================
+   VERSION SELECTOR
+   - index.html            -> choose the version (language + region)
+   - index.html?lang=it    -> choose the category, in that language
+   Each version loads Creative_Courses/content/<lang>.js and Coding_Courses/content/<lang>.js.
+   To add a language: add it to REGIONS and to TEXT below (and create its content files).
+   ===================================================================== */
+var REGIONS = [
+  { lang: 'it',    badge: 'IT', name: 'Italiano', region: 'Italia' },
+  { lang: 'pl',    badge: 'PL', name: 'Polski',   region: 'Polska' },
+  { lang: 'en-gb', badge: 'UK', name: 'English',  region: 'United Kingdom' },
+  { lang: 'en-us', badge: 'US', name: 'English',  region: 'United States' }
+];
+var CATS = [
+  { dir: 'Creative_Courses', icon: '🎨', key: 'creative', name: 'Creative Courses',            courses: 'Video Creation · Sound Design · Pixel Art' },
+  { dir: 'Coding_Courses',   icon: '💻', key: 'coding',   name: 'Coding & Technology Courses', courses: 'Vibe Coding · Science via Minecraft' }
+];
+var EN = { kicker: 'Tutor training · Multi-courses', lead: 'Shorter, topic-focused courses taught in the Parallel Lessons format. Choose a category to meet its courses.', start: 'Start →', change: '← Change version', foot: 'kodland · Multi-courses training' };
+var TEXT = {
+  'en':    EN,
+  'en-gb': EN,
+  'en-us': EN,
+  'it': { kicker: 'Formazione tutor · Multi-courses', lead: 'Corsi più brevi e incentrati su un tema, svolti nel formato Parallel Lessons. Scegli una categoria per conoscere i suoi corsi.', start: 'Inizia →', change: '← Cambia versione', foot: 'kodland · Formazione Multi-courses' },
+  'pl': { kicker: 'Szkolenie dla tutorów · Multi-courses', lead: 'Krótsze kursy skupione na jednym temacie, prowadzone w formacie Parallel Lessons. Wybierz kategorię, aby poznać jej kursy.', start: 'Zacznij →', change: '← Zmień wersję', foot: 'kodland · Szkolenie Multi-courses' }
+};
+var PICK = { kicker: 'Tutor training · Multi-courses', lead: 'Choose your version. Each one is in its own language and has the course links for its region.', open: 'Open →', foot: 'kodland · Multi-courses training' };
+
+var $ = function(id){ return document.getElementById(id); };
+var m = location.search.match(/[?&]lang=([a-z-]+)/i);
+var lang = m ? m[1].toLowerCase() : '';
+
+if (TEXT[lang]) {
+  /* Step 2: the version is chosen -> categories */
+  var t = TEXT[lang], r = REGIONS.filter(function(x){ return x.lang === lang; })[0];
+  document.documentElement.lang = lang.split('-')[0];
+  $('kicker').textContent = t.kicker;
+  $('lead').textContent = t.lead;
+  $('foot').textContent = t.foot;
+  if (r) $('regionTag').innerHTML = '<span class="region-tag"><span class="badge">' + r.badge + '</span>' + r.name + ' · ' + r.region + '</span>';
+  $('pick').innerHTML = CATS.map(function(c){
+    return '<a href="' + c.dir + '/index.html?lang=' + lang + '"><div class="ic">' + c.icon + '</div><b>' + c.name + '</b><p>' + c.courses + '</p><span>' + t.start + '</span></a>';
+  }).join('');
+  $('back').textContent = t.change; $('back').hidden = false;
+} else {
+  /* Step 1: choose the version */
+  $('kicker').textContent = PICK.kicker;
+  $('lead').textContent = PICK.lead;
+  $('foot').textContent = PICK.foot;
+  $('pick').innerHTML = REGIONS.map(function(r){
+    return '<a href="index.html?lang=' + r.lang + '"><div class="badge">' + r.badge + '</div><b>' + r.name + '</b><p>' + r.region + '</p><span>' + PICK.open + '</span></a>';
+  }).join('');
+}
+</script>
 </body>
 </html>
