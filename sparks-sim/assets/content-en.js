@@ -399,13 +399,13 @@ CONTENT.tours = {
     closeTab: 'Close this tab to go back to the training.'
   },
 
-  /* ---------- Video Editing ---------- */
+  /* ---------- Video Creation ---------- */
   video: {
     welcome: {
-      kicker: 'Video Editing · Kodland Sparks',
-      title: 'Video Editing <span>on Sparks</span>',
-      lead: 'Students edit their videos in Canva and CapCut, and <b>Kodland Sparks</b> is where everything meets: their frame-by-frame animations, the <b>AI agent</b> they use as a production partner, and the projects they publish at the end of every module.',
-      see: ['Studio and its <b>project slots</b>.', 'The <b>Animation</b> editor: drawing frame by frame, like the name animation of Lesson 1.', 'The <b>AI helper</b> students use for ideas, images and voiceovers.'],
+      kicker: 'Video Creation · Kodland Sparks',
+      title: 'Video Creation <span>on Sparks</span>',
+      lead: 'Students edit their videos in CapCut Desktop, and <b>Kodland Sparks</b> is where the rest happens: the animated intro of their channel, the <b>Sparks AI</b> that works as their script editor, and the project page where they publish their final video.',
+      see: ['Studio and its <b>project slots</b>.', 'The <b>Animation</b> editor: drawing frame by frame, like the channel intro of Lesson 1.', 'The <b>AI helper</b> students use for ideas, images and voiceovers.'],
       howText: 'Click the highlighted element on each screen, or press <b>Next</b> when the step asks you to read. Nothing can go wrong.',
       start: 'START THE TOUR →'
     },
@@ -413,25 +413,25 @@ CONTENT.tours = {
       { title:'Studio: two modes', text:'This is <b>Studio</b>, where students create. It has two modes:<br><br>• <b>Creative mode</b>: build anything — games, art, animations.<br>• <b>Challenges mode</b>: complete tasks and earn crystals.' },
       { title:'Creative mode', text:'Click <b>Creative mode</b>.' },
       { title:'Project slots', text:'Students keep the projects they’re working on in <b>slots</b>. Click <b>Slot 1</b> to start a new project.' },
-      { title:'Animation', text:'Video Editing starts with <b>frame-by-frame animation</b>: in Lesson 1, students animate their name. On Sparks, frame-by-frame drawing lives in <b>Animation</b>, under Media &amp; content. Click it.' },
+      { title:'Animation', text:'Video Creation starts with a <b>channel intro</b>: in Lesson 1, students draw an animated intro in Animation Studio. On Sparks, frame-by-frame drawing lives in <b>Animation</b>, under Media &amp; content. Click it.' },
       { title:'Pick a canvas size', text:'Animation canvases come in three sizes; <b>960 × 720</b> is the recommended one. Click it.' },
       { title:'An animation project', text:'Students draw each <b>frame</b>, see the previous one through the <b>onion skin</b>, and press play. They can change the speed and loop the animation.<br><br>The same idea — many small frames that create movement — is the base of every video they’ll edit later.' },
-      { title:'The AI helper', text:'In this course, AI is a <b>production partner in every module</b>: ideas, images, voiceovers and short clips. Click the green <b>AI helper</b> button.' },
-      { title:'AI proposes, the student decides', text:'Students ask <b>Aiko</b> for ideas, a story spine or an image for their next video. The AI helps, but <b>students keep the editing decisions and the final montage</b>.<br><br>When a project is ready, they publish it on Sparks, in their portfolio.' }
+      { title:'The AI helper', text:'In this course, AI works as a <b>script editor</b>: students write a draft and ask where it gets boring. Sparks also gives them AI images for their videos. Click the green <b>AI helper</b> button.' },
+      { title:'AI proposes, the student decides', text:'Students ask <b>Aiko</b> for feedback on their script, ideas for the hook or an image for their next video. The AI helps, but <b>students decide what to keep</b> and do the editing themselves.<br><br>When the final video is ready, they put it on a project page in Sparks.' }
     ],
-    finish: { title:'🎬 You know where Video Editing happens on Sparks', intro:'In this tour you saw:', items:[
+    finish: { title:'🎬 You know where Video Creation happens on Sparks', intro:'In this tour you saw:', items:[
       '<b>Studio</b> and its project <b>slots</b>.',
       'The <b>Animation</b> editor, for frame-by-frame work.',
-      'The <b>AI helper</b>: a production partner, never the editor.'
+      'The <b>AI helper</b>: a script editor, never the author.'
     ] }
   },
 
-  /* ---------- Music ---------- */
+  /* ---------- Sound Design (Music) ---------- */
   music: {
     welcome: {
-      kicker: 'Music · Kodland Sparks',
-      title: 'Music <span>on Sparks</span>',
-      lead: 'Every project of the Music course is created inside <b>Kodland Sparks</b>, right in the browser: no software to install. Let’s open the music editor your students will use.',
+      kicker: 'Sound Design · Kodland Sparks',
+      title: 'Sound Design <span>on Sparks</span>',
+      lead: 'Sound Design is taught in <b>Music Studio</b>, right in the browser, inside <b>Kodland Sparks</b>: no software to install. Let’s open the music editor your students will use.',
       see: ['Studio and its <b>project slots</b>.', 'The <b>Music</b> editor and its starting tracks.', 'How a track is built: melody, tracks, drums and tempo.'],
       howText: 'Click the highlighted element on each screen, or press <b>Next</b> when the step asks you to read. Nothing can go wrong.',
       start: 'START THE TOUR →'
@@ -451,12 +451,12 @@ CONTENT.tours = {
     ] }
   },
 
-  /* ---------- Pixel Lab ---------- */
+  /* ---------- Pixel Art ---------- */
   pixel: {
     welcome: {
-      kicker: 'Pixel Lab · Kodland Sparks',
-      title: 'Pixel Lab <span>on Sparks</span>',
-      lead: 'Pixel Lab is taught in <b>Pixel Studio</b>, inside <b>Kodland Sparks</b>. Let’s open it the way your students will.',
+      kicker: 'Pixel Art · Kodland Sparks',
+      title: 'Pixel Art <span>on Sparks</span>',
+      lead: 'Pixel Art is taught in <b>Pixel Studio</b>, inside <b>Kodland Sparks</b>. Let’s open it the way your students will.',
       see: ['Studio and its <b>project slots</b>.', 'The <b>Pixel Art</b> editor and its canvas sizes.', 'The drawing tools and the <b>frames</b> that turn a drawing into an animation.'],
       howText: 'Click the highlighted element on each screen, or press <b>Next</b> when the step asks you to read. Nothing can go wrong.',
       start: 'START THE TOUR →'
@@ -465,9 +465,9 @@ CONTENT.tours = {
       { title:'Studio: two modes', text:'This is <b>Studio</b>, where students create. It has two modes:<br><br>• <b>Creative mode</b>: build anything — games, art, animations.<br>• <b>Challenges mode</b>: complete tasks and earn crystals.' },
       { title:'Creative mode', text:'Click <b>Creative mode</b>.' },
       { title:'Project slots', text:'Students keep the projects they’re working on in <b>slots</b>. Click <b>Slot 1</b> to start a new project.' },
-      { title:'Pixel Art', text:'Pixel Lab lives under <b>Media &amp; content</b>: students draw <b>pixel by pixel</b>. Click <b>Pixel Art</b>.' },
+      { title:'Pixel Art', text:'Pixel Art lives under <b>Media &amp; content</b>: students draw <b>pixel by pixel</b>. Click <b>Pixel Art</b>.' },
       { title:'Pick a canvas size', text:'Students pick a <b>canvas size</b>; <b>32 × 32</b> is the recommended one. A small canvas is part of the style: few pixels, a limited palette, a clear shape.<br><br>Click <b>32 × 32</b>.' },
-      { title:'A pixel art project', text:'The <b>pixel art editor</b>: drawing tools, brush sizes, <b>shade &amp; dither</b>, colours and undo on the left, the <b>canvas</b> in the middle, and the <b>frames</b> at the bottom.<br><br>With frames, a coin starts spinning and a character starts running: that’s the animation students create in Pixel Lab.' }
+      { title:'A pixel art project', text:'The <b>pixel art editor</b>: drawing tools, brush sizes, <b>shade &amp; dither</b>, colours and undo on the left, the <b>canvas</b> in the middle, and the <b>frames</b> at the bottom.<br><br>With frames, a coin starts spinning and a character starts running: that’s the animation students create in Pixel Art.' }
     ],
     finish: { title:'👾 You know Pixel Studio', intro:'In this tour you saw:', items:[
       '<b>Studio</b> and its project <b>slots</b>.',
@@ -489,17 +489,17 @@ CONTENT.tours = {
     steps: [
       { title:'Studio: two modes', text:'This is <b>Studio</b>, where students create. It has two modes:<br><br>• <b>Creative mode</b>: build anything — games, sites, art.<br>• <b>Challenges mode</b>: complete tasks and earn crystals.' },
       { title:'Creative mode', text:'Click <b>Creative mode</b>.' },
-      { title:'Project slots', text:'Students keep the projects they’re working on in <b>slots</b> — useful in this course, where the game grows from <b>version 1</b> to the <b>final version</b>. Click <b>Slot 1</b>.' },
+      { title:'Project slots', text:'Students keep the projects they’re working on in <b>slots</b> — useful in this course, where the game grows lesson by lesson. Click <b>Slot 1</b>.' },
       { title:'Programming &amp; development', text:'Vibe Coding lives under <b>Programming &amp; development</b>. Click <b>Game or web app</b>.' },
       { title:'Choose a starting point', text:'A web app is built with <b>HTML, CSS and JavaScript</b> (Web App JS), or with the logic in Python (Web App Python). Students can start empty or from a base.<br><br>Click <b>Empty project</b> under Web App JS.' },
       { title:'Preview and code', text:'At the top, the <b>Preview</b> shows the game live: every change appears instantly. Below, the <b>HTML</b>, <b>CSS</b> and <b>JS</b> tabs.<br><br>In Lesson 3, students learn what each one does: <b>structure</b>, <b>look</b> and <b>logic</b>.' },
-      { title:'The AI tutor', text:'On the right, the <b>AI tutor</b> helps students write prompts, add features and fix errors.<br><br>The rule of the course: <b>the programmer directs the AI, not the other way round</b>. Good results come from clear prompts and several iterations.' },
-      { title:'Save, name and publish', text:'The top bar shows the <b>slot</b>, the save button and the <b>project title</b>. <b>Publish</b> shares the game: the final version of the Runner is published on Kodland Sparks.' }
+      { title:'The AI tutor', text:'On the right, the <b>AI tutor</b> helps students write prompts, add features and fix errors.<br><br>In this course, students write clear prompts, test the result and describe any bug so the AI can fix it.' },
+      { title:'Save, name and publish', text:'The top bar shows the <b>slot</b>, the save button and the <b>project title</b>. <b>Publish</b> shares the game: the final game goes on a project page in Sparks.' }
     ],
     finish: { title:'🤖 You know the Vibe Coding editor', intro:'In this tour you saw:', items:[
       '<b>Studio</b> and its project <b>slots</b>.',
       'A <b>Game or web app</b> project, with the live preview and the HTML, CSS and JS tabs.',
-      'The <b>AI tutor</b>: the student directs it, not the other way round.',
+      'The <b>AI tutor</b>: students write the prompts and test the result.',
       'Where the game is saved and <b>published</b>.'
     ] }
   }
