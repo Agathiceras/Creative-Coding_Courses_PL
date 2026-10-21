@@ -155,6 +155,15 @@
       </div>` : '';
     const ex = (c.projects && c.projects.length) || c.gallery ? `
       <div class="block"><h4>${L.examples}</h4>${c.projects ? projects(c.projects) : ''}${c.gallery ? gallery(c.gallery) : ''}</div>` : '';
+    // Link to the course in the BO (only when the content file defines `bo`, i.e. regional versions)
+    const bo = c.bo ? `
+      <div class="launcher bo">
+        <div class="l-ic">🔗</div>
+        <div><b>${L.boTitle}</b><p>${fill(L.boText, { region:C.region || '' })}</p>
+          ${c.bo.note ? `<p class="bo-note">⏳ ${c.bo.note}</p>` : ''}
+          <a class="btn-y" target="_blank" rel="noopener" href="${c.bo.url}">${fill(L.boBtn, { id:c.bo.id })}</a>
+        </div>
+      </div>` : '';
     const nxt = S.open + 1 < C.courses.length
       ? `<button class="btn-y" data-act="open" data-i="${S.open + 1}">${fill(L.next, { name:C.courses[S.open + 1].name })}</button>`
       : `<button class="btn-y" data-act="final">${L.toFinal}</button>`;
@@ -182,10 +191,12 @@
 
         ${req}
 
+        ${bo}
+
         <div class="c-end"><span>${fill(L.endText, { name:c.name })}</span>${nxt}</div>
       </article>`;
   }
-  const tourUrl = c => SPARKS_TOUR + '?tour=' + c.platform.tour + '&lang=' + encodeURIComponent(C.lang || 'en');
+  const tourUrl = c => SPARKS_TOUR + '?tour=' + c.platform.tour + '&lang=' + encodeURIComponent(C.tourLang || C.lang || 'en');
 
   /* ---------- clicks ---------- */
   document.addEventListener('click', e => {
