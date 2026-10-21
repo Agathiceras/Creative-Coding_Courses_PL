@@ -10,7 +10,6 @@ window.MC_CONTENT = {
   lang: "it",
   track: "coding",
   region: "Italia",
-  tourLang: "en", /* the Sparks tour is still in English: change to "it" once assets/content-it.js exists */
 
   ui: {
     pageTitle: "Coding & Technology Courses",
@@ -135,9 +134,9 @@ window.MC_CONTENT = {
       ],
       platform: {
         text: "Gli studenti costruiscono il gioco in <b>AI Vibe Coding</b>, dentro <b>Kodland Sparks</b>, in un progetto <b>Game or web app</b> con anteprima dal vivo e le schede HTML, CSS e JS. Scrivono prompt, provano il gioco, descrivono i bug e chiedono all’IA di correggerli. Il gioco finale va su una pagina del progetto in Sparks.",
-        tools: ["Kodland Sparks · Game or web app", "AI tutor", "HTML · CSS · JavaScript"],
+        tools: ["Kodland Sparks · Game or web app", "Tutor IA", "HTML · CSS · JavaScript"],
         tour: "vibe",
-        tourText: "Apri Studio, avvia un progetto Game or web app e guarda l’anteprima dal vivo, le schede del codice e l’AI tutor."
+        tourText: "Apri Studio, avvia un progetto Game or web app e guarda l’anteprima dal vivo, le schede del codice e il tutor IA."
       },
       /* Progetti degli studenti pubblicati su Kodland Sparks: href, img, tag, title, by (nickname), desc */
       projects: [

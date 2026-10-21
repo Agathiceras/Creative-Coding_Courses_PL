@@ -10,7 +10,6 @@ window.MC_CONTENT = {
   lang: "it",
   track: "creative",
   region: "Italia",
-  tourLang: "en", /* the Sparks tour is still in English: change to "it" once assets/content-it.js exists */
 
   ui: {
     pageTitle: "Creative Courses",
