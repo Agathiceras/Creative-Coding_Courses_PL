@@ -18,26 +18,26 @@ window.MC_CONTENT = {
     kicker: "Formazione tutor · Multi-courses",
     title1: "Creative",
     title2: "Courses",
-    lead: "Scopri i tre mini-corsi creativi che i tuoi studenti possono frequentare: <b>Video Creation</b>, <b>Sound Design</b> e <b>Pixel Art</b>. Per ognuno vedrai la storia, le lezioni, la piattaforma — e li proverai su Kodland Sparks.",
-    strip: ["Completa prima la formazione sul PL", "Cosa sono i mini-corsi", "Esplora i 3 corsi", "Svolgi il test nell’LMS"],
+    lead: "Scopri i tre mini-corsi creativi che i tuoi studenti possono frequentare: <b>Video Creation</b>, <b>Sound Design</b> e <b>Pixel Art</b>. Per ciascun corso scoprirai la storia, le lezioni e la piattaforma, e potrai provarlo su Kodland Sparks.",
+    strip: ["Completa prima la formazione sulle Parallel Lessons", "Cosa sono i mini-corsi", "Esplora i 3 corsi", "Svolgi il test nell’LMS"],
     flipHint: "Tocca per girare",
     progress: "{done}/{total} corsi visti",
 
     pl: {
       title: "Prima di iniziare",
-      text: "Tutti questi corsi si svolgono nel formato <b>Parallel Lessons (PL)</b>: tu apri e chiudi la lezione di ogni studente, e gli studenti lavorano in autonomia con le schede nel mezzo. Questa formazione non spiega di nuovo il formato, quindi <b>completa prima la formazione su Parallel Lessons</b>.",
-      check: "Ho completato la formazione su Parallel Lessons",
+      text: "Tutti questi corsi si svolgono nel formato <b>Parallel Lessons (PL)</b>: tu conduci la fase iniziale e quella conclusiva della lezione di ogni studente, mentre nella fase centrale gli studenti lavorano in autonomia con le schede. Questa formazione non riprende la spiegazione del formato, quindi <b>completa prima la formazione</b> sulle Parallel Lessons.",
+      check: "Ho completato la formazione sulle Parallel Lessons",
       ok: "✅ Perfetto — la formazione è sbloccata. Scorri verso il basso per iniziare.",
-      locked: "Completa prima la formazione su Parallel Lessons, poi spunta la casella qui sopra per sbloccare questa formazione."
+      locked: "Completa prima la formazione sulle Parallel Lessons, poi spunta la casella qui sopra per sbloccare questa formazione."
     },
 
     mini: {
       title: "Cosa sono i mini-corsi?",
-      intro: "I <b>Multi-courses</b> offrono agli studenti la possibilità di esplorare materie diverse attraverso <b>corsi più brevi e incentrati su un tema</b>, invece di impegnarsi in un unico programma educativo lungo. Gira le carte:",
+      intro: "I <b>Multi-courses</b> offrono agli studenti la possibilità di esplorare materie diverse attraverso <b>corsi più brevi e incentrati su un tema</b>, invece di impegnarsi in un unico percorso formativo più lungo. Gira le carte:",
       cards: [
         ["⏱️", "Più brevi", "Ogni corso è breve e incentrato su un solo tema, così gli studenti arrivano in fretta a un progetto concreto e finito."],
         ["🧭", "Esplora", "Gli studenti possono provare materie diverse — video, musica, pixel art, coding, scienze — e scoprire cosa piace loro di più."],
-        ["🧩", "Collegati", "Alcuni corsi lavorano insieme: per esempio, la grafica che gli studenti disegnano in Pixel Art può diventare parte del gioco che costruiscono in Vibe Coding."]
+        ["🧩", "Collegati", "Alcuni corsi si integrano tra loro: per esempio, la grafica che gli studenti realizzano in Pixel Art può diventare parte del gioco che creano in Vibe Coding."]
       ],
       catsTitle: "Due categorie, due formazioni",
       youAreHere: "Questa formazione",
@@ -46,7 +46,7 @@ window.MC_CONTENT = {
         { icon: "🎨", name: "Creative Courses", courses: ["Video Creation", "Sound Design", "Pixel Art"], current: true },
         { icon: "💻", name: "Coding & Technology Courses", courses: ["Vibe Coding", "Science via Minecraft"], current: false }
       ],
-      pl: "<b>Si svolgono nel formato PL.</b> Tutto ciò che hai imparato nella formazione su Parallel Lessons vale anche qui: aperture e chiusure individuali, lavoro autonomo con le schede, aiuto quando uno studente alza la mano e feedback nella chiusura."
+      pl: "<b>Si svolgono nel formato PL.</b> Tutto ciò che hai imparato nella formazione sulle Parallel Lessons vale anche qui: fasi iniziali e conclusive individuali, lavoro autonomo con le schede, aiuto quando uno studente alza la mano e feedback nella fase conclusiva."
     },
 
     courses: {
@@ -64,7 +64,7 @@ window.MC_CONTENT = {
       pl: "⚡ Nelle tue lezioni parallele",
       platform: "🖥️ Piattaforma e strumenti",
       requirements: "Requisiti tecnici",
-      requirementsIntro: "Verificali prima della prima lezione — e nel controllo della connessione, se qualcosa non funziona.",
+      requirementsIntro: "Verifica i requisiti prima della prima lezione e assicurati di non avere problemi di connessione.",
       examples: "👀 Progetti realizzati dagli studenti",
       projOpen: "Apri il progetto ↗",
       tourTitle: "Provalo su Kodland Sparks",
@@ -84,9 +84,9 @@ window.MC_CONTENT = {
     final: {
       title: "Concludi la formazione",
       soonTitle: "Hai esplorato tutti i Creative Courses!",
-      soon: "<p>Questi corsi sono <b>in fase di traduzione</b> proprio ora.</p><p>Non appena saranno pronti, <b>il bot ti avviserà</b> che i corsi sono stati <b>abilitati nel BO</b>. Da quel momento li troverai — insieme alle loro Teacher Notes — come gli altri tuoi corsi PL.</p><p>Grazie per la tua preparazione! 💜</p>",
+      soon: "<p>Questi corsi sono <b>in fase di traduzione</b> proprio ora.</p><p>Non appena saranno pronti, <b>il bot ti avviserà</b> che i corsi sono stati <b>abilitati nel BO</b>. Da quel momento li troverai — insieme alle loro Teacher Notes — come gli altri tuoi corsi PL.Grazie per esserti preparato! 💜</p>",
       lmsTitle: "Ultimo passo: il test nell’LMS",
-      lms: "<p>Torna alla <b>pagina della formazione nell’LMS</b> da cui hai aperto questa formazione. Subito sotto la formazione trovi il <b>test DST</b>.</p><p>👉 Devi completare e superare il test DST perché la formazione sia considerata completata con successo. Se non completi il test DST, la formazione resterà incompleta e potrebbe scadere.</p><p>Il punteggio minimo per superarlo è <b>80%</b>.</p><p>Buona fortuna! ❤️</p>"
+      lms: "<p>Torna alla <b>pagina della formazione nell’LMS</b> da cui hai aperto questa formazione. Subito sotto la formazione trovi il <b>test DST</b>.</p><p>👉 Devi completare e superare il test DST perché la formazione sia considerata completata con successo. Se non completi il test DST, la formazione resterà incompleta e potrebbe scadere.Il punteggio minimo per superarlo è l’<b>80%</b>.</p><p>Buona fortuna! ❤️</p>"
     }
   },
 
@@ -98,44 +98,44 @@ window.MC_CONTENT = {
       icon: "🎬",
       name: "Video Creation",
       label: "Corso creativo",
-      tagline: "Crea video brevi che le persone vogliono guardare fino alla fine — su qualcosa che ami, senza mostrare il tuo volto.",
+      tagline: "Crea video brevi su qualcosa che ami, capaci di coinvolgere gli spettatori fino alla fine, senza mostrare il tuo volto.",
       facts: [["Età", "10–13"], ["Lezioni", "5"], ["Durata della lezione", "60 min"], ["Livello", "Principiante"], ["Piattaforma", "CapCut Desktop + Kodland Sparks"]],
-      story: "<p>Gli studenti imparano a creare <b>video brevi che le persone vogliono guardare fino alla fine</b>. Ogni video parla di qualcosa che amano: un gioco, una serie, uno sport, la musica o gli animali. Il corso riguarda ciò che rende interessante un video: un <b>hook forte</b>, uno <b>script chiaro</b>, un <b>buon ritmo</b> e una <b>storia con un finale</b>. Gli studenti imparano anche a montare: tagliano le clip sulla timeline e aggiungono sottotitoli, musica, effetti sonori, voce e transizioni.</p><p><b>L’IA funziona come editor dello script.</b> Gli studenti scrivono una bozza, poi chiedono a Sparks AI dove diventa noiosa e come rendere l’hook più forte. Sono loro a decidere cosa tenere. Gli studenti montano in <b>CapCut Desktop</b> e usano clip stock, il proprio gameplay e immagini IA di Sparks. <b>Non devono mostrare il proprio volto.</b></p><p>Non serve alcuna esperienza di montaggio. Alla fine, ogni studente ha <b>cinque video brevi</b> sul proprio interesse, un’<b>intro del canale</b> e un <b>video finale</b> su una pagina del progetto in Sparks.</p>",
+      story: "<p>Gli studenti imparano a creare <b>video brevi che le persone vogliono guardare fino alla fine</b>. Ogni video parla di qualcosa che amano: un gioco, una serie, uno sport, la musica o gli animali.Il corso esplora ciò che rende interessante un video: un’apertura che cattura l’attenzione (hook), uno <b>script chiaro</b> (la sceneggiatura del video), un <b>buon ritmo</b> e una <b>storia con un finale</b>. Gli studenti imparano anche a montare: tagliano le clip sulla timeline e aggiungono sottotitoli, musica, effetti sonori, voce e transizioni.</p><p><b>L’IA aiuta a rivedere lo script del video.</b> Gli studenti scrivono una bozza, poi chiedono a Sparks AI quali passaggi risultano noiosi e come rendere l’hook più efficace. Sono loro a decidere cosa tenere.Gli studenti montano in <b>CapCut Desktop</b> e usano clip stock, registrazioni delle proprie sessioni di gioco e immagini generate con l’IA di Sparks. <b>Non devono mostrare il proprio volto.</b></p><p>Non serve alcuna esperienza di montaggio.Alla fine, ogni studente ha <b>cinque video brevi</b> dedicati a un argomento che gli interessa, un’<b>intro del canale</b> e un <b>video finale</b> su una pagina del progetto in Sparks.</p>",
       outcomes: [
-        "Iniziare un video con un hook che trattiene lo spettatore nei primi secondi.",
+        "Iniziare un video con un hook che catturi l’attenzione dello spettatore fin dai primi secondi.",
         "Scrivere un breve script e migliorarlo con il feedback dell’IA.",
-        "Montare un video in CapCut: tagliare le clip sulla timeline, aggiungere sottotitoli, musica, effetti sonori, una voce e transizioni, ed esportare il risultato.",
-        "Montare pensando al ritmo: tagliare ciò che è lento, aggiungere zoom e cambi di velocità, mettere i suoni sui momenti chiave.",
+        "Montare un video in CapCut: tagliare le clip sulla timeline, aggiungere sottotitoli, musica, effetti sonori, una traccia vocale e transizioni, ed esportare il risultato.",
+        "Montare un video curandone il ritmo: tagliare i passaggi lenti, aggiungere zoom e variazioni di velocità e sincronizzare i suoni con i momenti chiave.",
         "Raccontare una breve storia con un inizio, un problema e un finale, senza mostrare il proprio volto.",
-        "Usare solo materiale che si può usare: il proprio, clip stock e immagini IA.",
+        "Usare soltanto materiale consentito, come contenuti propri, clip stock e immagini generate con l’IA.",
         "Pubblicare un video e ricevere feedback dal tutor e dagli altri studenti."
       ],
       bo: { id: "2188", url: "https://bo.kodland.org/courses/2188", note: "Nel BO, le prime lezioni di questo corso verranno aggiunte durante la settimana del 19 ottobre 2026." },
       programmeIntro: "5 lezioni da 60 minuti. Apri ogni lezione:",
       programme: [
-        { n: "Lezione 1", title: "Il mio canale e l’hook", details: [["", "Gli studenti scelgono l’argomento del loro canale e disegnano un’intro animata in Animation Studio. Scoprono perché gli spettatori se ne vanno nei primi secondi e realizzano in CapCut un primo video breve che inizia con un hook. Lungo il percorso imparano le basi di CapCut: importare le clip, tagliarle sulla timeline, aggiungere testo e musica, esportare. Lo pubblicano e scoprono come funziona la pubblicazione."]] },
-        { n: "Lezione 2", title: "Lo script", details: [["", "Gli studenti realizzano un video «3 fatti su…» sul loro gioco, serie o sport. Scrivono un breve script, chiedono a Sparks AI di trovare i punti deboli e lo riscrivono. Poi aggiungono una voce di CapCut e i sottotitoli."]] },
-        { n: "Lezione 3", title: "Il ritmo", details: [["", "Gli studenti realizzano un video di highlights con il proprio gameplay o con clip stock. Tagliano i momenti lenti, aggiungono zoom e cambi di velocità e mettono i suoni sui momenti chiave. Gli altri studenti lo guardano e dicono dove si sono annoiati."]] },
-        { n: "Lezione 4", title: "Storytime", details: [["", "Gli studenti raccontano una breve storia sul loro hobby, con un inizio, un problema e un finale. La pianificano con l’IA, poi la costruiscono con una voce, clip stock e immagini IA. Nessuno deve mostrare il proprio volto."]] },
+        { n: "Lezione 1", title: "Il mio canale e l’hook", details: [["", "Gli studenti scelgono l’argomento del loro canale e realizzano un’intro animata in Animation Studio. Scoprono perché gli spettatori abbandonano il video nei primi secondi e realizzano in CapCut un primo video breve che inizia con un hook. Nel frattempo imparano le basi di CapCut: importare le clip, tagliarle sulla timeline, aggiungere testo e musica ed esportare il video. Infine lo pubblicano e scoprono come funziona la pubblicazione."]] },
+        { n: "Lezione 2", title: "Lo script", details: [["", "Gli studenti realizzano un video «3 fatti su…» dedicato al loro gioco, alla loro serie o al loro sport preferito. Scrivono un breve script, chiedono a Sparks AI di individuarne i punti deboli e lo riscrivono. Poi aggiungono una traccia vocale realizzata con CapCut e i sottotitoli."]] },
+        { n: "Lezione 3", title: "Il ritmo", details: [["", "Gli studenti realizzano un video con i momenti salienti delle proprie sessioni di gioco o con clip stock. Tagliano i passaggi lenti, aggiungono zoom e variazioni di velocità e sincronizzano i suoni con i momenti chiave. Gli altri studenti lo guardano e indicano i passaggi in cui si sono annoiati."]] },
+        { n: "Lezione 4", title: "Storytime", details: [["", "Gli studenti raccontano una breve storia sul loro hobby, con un inizio, un problema e un finale. La pianificano con l’IA, poi la realizzano con una traccia vocale, clip stock e immagini generate con l’IA. Nessuno deve mostrare il proprio volto."]] },
         { n: "Lezione 5", title: "Progetto finale: il mio video migliore", details: [["", "Gli studenti pianificano, scrivono e montano da soli un nuovo video, usando tutto ciò che hanno imparato nelle lezioni 1–4. Creano una copertina, pubblicano il video su una pagina del progetto in Sparks e lo mostrano al tutor e agli altri studenti."]] }
       ],
       build: [
         ["🎞️", "Un’intro del canale", "Un’intro animata per il loro canale, disegnata in Animation Studio nella lezione 1."],
         ["🪝", "Un video con un hook", "Il loro primo video breve in CapCut, che inizia con un hook e viene pubblicato nella lezione 1."],
-        ["🔢", "Un video «3 fatti su…»", "Uno script migliorato con il feedback di Sparks AI, con una voce di CapCut e i sottotitoli."],
-        ["⚡", "Un video di highlights", "Momenti lenti tagliati, zoom e cambi di velocità aggiunti e suoni sui momenti chiave."],
-        ["📖", "Un video storytime", "Una storia con un inizio, un problema e un finale, costruita con una voce, clip stock e immagini IA."],
+        ["🔢", "Un video «3 fatti su…»", "Un video basato su uno script migliorato con il feedback di Sparks AI, con una traccia vocale realizzata con CapCut e i sottotitoli."],
+        ["⚡", "Un video di highlights", "Un video con i passaggi lenti eliminati, zoom e variazioni di velocità e suoni sincronizzati con i momenti chiave."],
+        ["📖", "Un video storytime", "Una storia con un inizio, un problema e un finale, realizzata con una traccia vocale, clip stock e immagini generate con l’IA."],
         ["🏆", "Il mio video migliore", "Un nuovo video pianificato, scritto e montato da soli, con una copertina, su una pagina del progetto in Sparks."]
       ],
       pl: [
-        "Gli studenti non compaiono davanti alla camera nei loro video, ma parlano comunque con te: nel <b>controllo della connessione</b> verifica che la loro videocamera, il microfono e l’audio funzionino.",
-        "Il montaggio avviene in <b>CapCut Desktop</b>, e l’intro del canale in <b>Animation Studio</b>. Nelle prime lezioni verifica che lo studente riesca ad aprire lo strumento e a passare alla scheda successiva da solo.",
-        "<b>L’IA è un editor dello script, non l’autore.</b> Gli studenti scrivono una bozza, chiedono a Sparks AI dove diventa noiosa e <b>decidono loro cosa tenere</b>. Ricordaglielo quando ti chiamano.",
-        "Nella <b>chiusura</b>, lo studente mostra il suo video e tu dai un feedback specifico: cosa funziona nell’hook, nel ritmo, nei sottotitoli — e un chiaro passo successivo.",
-        "Gli studenti pubblicano un <b>link al loro video</b> su una pagina del progetto in Sparks. Il video può essere su YouTube, Vimeo o Canva; se uno studente è troppo giovane per avere un account, il video va sull’account di un genitore."
+        "Gli studenti non mostrano il proprio volto nei video, ma parlano comunque con te: durante il <b>controllo della connessione</b> verifica che la videocamera, il microfono e l’audio funzionino.",
+        "Il montaggio si svolge in <b>CapCut Desktop</b>, mentre l’intro del canale viene realizzata in <b>Animation Studio</b>. Nelle prime lezioni verifica che lo studente riesca ad aprire lo strumento e a passare alla scheda successiva da solo.",
+        "<b>L’IA è un</b> revisore dello script, non l’autore. Gli studenti scrivono una bozza, chiedono a Sparks AI quali passaggi risultano noiosi e <b>decidono loro cosa tenere</b>. Ricordaglielo quando ti chiedono aiuto.",
+        "Nella <b>fase conclusiva</b>, lo studente mostra il suo video e tu dai un feedback specifico su ciò che funziona nell’hook, nel ritmo e nei sottotitoli, indicando anche un passo successivo chiaro.",
+        "Gli studenti pubblicano un <b>link al loro video</b> su una pagina del progetto in Sparks. Il video può essere su YouTube, Vimeo o Canva; se uno studente è troppo giovane per avere un account, il video viene pubblicato tramite l’account di un genitore."
       ],
       platform: {
-        text: "Gli studenti montano in <b>CapCut Desktop</b> e disegnano l’intro del canale in <b>Animation Studio</b>. Usano clip stock, il proprio gameplay e immagini IA di <b>Kodland Sparks</b>, dove <b>Sparks AI</b> funziona anche come editor dello script e dove ogni studente crea una pagina del progetto.<br><br><b>Pubblicazione.</b> Gli studenti pubblicano un link al loro video su una pagina del progetto in Sparks. Il video può essere su YouTube, Vimeo o Canva. Se uno studente è troppo giovane per avere un account su uno di questi siti, il video va sull’account di un genitore.",
+        text: "Gli studenti montano in <b>CapCut Desktop</b> e realizzano l’intro del canale in <b>Animation Studio</b>. Usano clip stock, registrazioni delle proprie sessioni di gioco e immagini generate con l’IA di <b>Kodland Sparks</b>, dove <b>Sparks AI</b> funziona anche come revisore dello script e dove ogni studente crea una pagina del progetto.<br><br><b>Pubblicazione.</b> Gli studenti pubblicano un link al loro video su una pagina del progetto in Sparks. Il video può essere su YouTube, Vimeo o Canva. Se uno studente è troppo giovane per avere un account su uno di questi siti, il video viene pubblicato tramite l’account di un genitore.",
         tools: ["CapCut Desktop", "Animation Studio", "Sparks AI", "Kodland Sparks · Pagina del progetto", "Google Chrome"],
         tour: "video",
         tourText: "Apri Studio, guarda l’editor di animazione fotogramma per fotogramma e l’assistente IA che gli studenti usano per idee, immagini e voci fuori campo."
@@ -160,7 +160,7 @@ window.MC_CONTENT = {
       label: "Corso creativo",
       tagline: "Crea tutto l’audio di un gioco runner — musica del menu, suoni degli eventi e temi dei livelli — senza saper leggere la musica.",
       facts: [["Lezioni", "5"], ["Durata della lezione", "60 min"], ["Livello", "Principiante"], ["Piattaforma", "Music Studio (nel browser)"]],
-      story: "<p>Gli studenti imparano il <b>sound design</b> creando tutto l’audio di un <b>gioco runner</b>: la musica del menu, i suoni degli eventi, il tema principale del livello e temi con atmosfere diverse.</p><p><b>Prima creano e imparano la teoria strada facendo</b>: sperimentano da soli ritmo, melodia e accordi in <b>Music Studio</b>, direttamente nel browser. <b>Non servono né la lettura della musica né la conoscenza di uno strumento.</b> Alla fine, ogni studente ha un <b>pacchetto audio pronto</b> per il runner e una pagina del progetto in Sparks.</p>",
+      story: "<p>Gli studenti imparano il <b>sound design</b> creando tutto l’audio di un <b>gioco runner</b>: la musica del menu, i suoni degli eventi, il tema principale del livello e temi con atmosfere diverse.Iniziano creando <b>e imparano la teoria strada facendo</b>: sperimentano in autonomia con ritmo, melodia e accordi in <b>Music Studio</b>, direttamente nel browser. <b>Non occorre saper leggere la musica né suonare uno strumento.</b> Alla fine, ogni studente ha un <b>pacchetto audio pronto</b> per il runner e una pagina del progetto in Sparks.</p>",
       outcomes: [
         "Costruire ritmo e melodia in Music Studio senza leggere la musica.",
         "Creare suoni brevi che dicono al giocatore cosa è successo: un salto, una ricompensa, un errore.",
@@ -171,32 +171,32 @@ window.MC_CONTENT = {
       bo: { id: "2106", url: "https://bo.kodland.org/courses/2106" },
       programmeIntro: "5 lezioni da 60 minuti. Apri ogni lezione:",
       programme: [
-        { n: "Lezione 1", title: "Musica del menu", details: [["", "Gli studenti scelgono l’atmosfera del runner e creano un loop calmo per la schermata del menu o della pausa. Il loop deve ripetersi senza interruzioni."]] },
-        { n: "Lezione 2", title: "Suoni degli eventi", details: [["", "Salto, moneta, schianto, turbo di velocità. Gli studenti creano brevi segnali e verificano che si distinguano anche senza vedere l’immagine."]] },
+        { n: "Lezione 1", title: "Musica del menu", details: [["", "Gli studenti scelgono l’atmosfera del gioco runner e creano un loop rilassante per la schermata del menu o di pausa. Il loop deve ripetersi senza interruzioni."]] },
+        { n: "Lezione 2", title: "Suoni degli eventi", details: [["", "Salto, raccolta di una moneta, schianto, aumento di velocità. Gli studenti creano brevi segnali sonori e verificano che siano riconoscibili anche senza guardare lo schermo."]] },
         { n: "Lezione 3", title: "Tema principale del livello", details: [["", "Un loop veloce per la corsa: tempo, ritmo e melodia danno la sensazione di velocità. Gli studenti imparano a non sovraccaricare il brano."]] },
         { n: "Lezione 4", title: "Atmosfera del livello: horror e fantasy", details: [["", "Gli strumenti restano gli stessi, cambiano gli accordi e il basso. Gli studenti creano due versioni del tema, una tesa per un livello buio e una luminosa per un villaggio fantasy, e sentono come cambia l’atmosfera."]] },
         { n: "Lezione 5", title: "Progetto finale: pagina del progetto", details: [["", "Gli studenti bilanciano il volume dei brani, danno un nome a ogni suono, mettono il pacchetto audio su una pagina del progetto in Sparks e lo mostrano al tutor e agli altri studenti."]] }
       ],
       build: [
-        ["🎵", "Un loop per il menu", "Un loop calmo per la schermata del menu o della pausa, che si ripete senza interruzioni."],
-        ["🔔", "Suoni degli eventi", "Salto, moneta, schianto e turbo di velocità — segnali brevi che si distinguono anche senza vedere l’immagine."],
+        ["🎵", "Un loop per il menu", "Un loop rilassante per la schermata del menu o di pausa, che si ripete senza interruzioni."],
+        ["🔔", "Suoni degli eventi", "Salto, raccolta di una moneta, schianto e aumento di velocità: brevi segnali sonori riconoscibili anche senza guardare lo schermo."],
         ["🏃", "Un tema principale del livello", "Un loop veloce in cui tempo, ritmo e melodia danno la sensazione di velocità."],
         ["🌗", "Due atmosfere del livello", "Lo stesso tema in una versione horror tesa e in una versione fantasy luminosa."],
         ["🎚️", "Un pacchetto audio bilanciato", "Brani con il volume bilanciato e ogni suono con un nome chiaro."],
         ["🗂️", "Una pagina del progetto in Sparks", "L’intero pacchetto audio, mostrato al tutor e agli altri studenti."]
       ],
       pl: [
-        "Nel <b>controllo della connessione</b> prova l’audio in entrambe le direzioni — gli studenti ascoltano i loro brani e confrontano le versioni per tutta la lezione.",
-        "Gli studenti <b>creano prima</b>: non iniziare con la teoria. La tua apertura propone la sfida creativa di oggi e le schede guidano la produzione.",
-        "Nella lezione 2 verifica che i suoni degli eventi <b>si distinguano anche senza vedere l’immagine</b>. Nella lezione 3 ricorda agli studenti di non sovraccaricare il brano.",
-        "Nella <b>chiusura</b> chiedi allo studente di far ascoltare il suo brano e dai un feedback specifico — su ritmo, melodia, atmosfera — con un chiaro passo successivo.",
+        "Durante il <b>controllo della connessione</b> verifica sia che tu riesca a sentire lo studente sia che lo studente riesca a sentire te: gli studenti ascoltano i loro brani e confrontano le versioni per tutta la lezione.",
+        "Gli studenti iniziano creando: non iniziare con la teoria. Nella fase iniziale presenti la sfida creativa della lezione, mentre le schede guidano la realizzazione del progetto.",
+        "Nella lezione 2 verifica che i suoni degli eventi siano riconoscibili anche senza guardare lo schermo. Nella lezione 3 ricorda agli studenti di non sovraccaricare il brano.",
+        "Nella <b>fase conclusiva</b> chiedi allo studente di far ascoltare il suo brano e dai un feedback specifico sul ritmo, sulla melodia e sull’atmosfera, indicando un passo successivo chiaro.",
         "Tutto avviene in <b>Music Studio</b>, direttamente nel browser. Nella lezione 5 gli studenti bilanciano il volume, danno un nome a ogni suono e mettono il pacchetto audio su una pagina del progetto in Sparks."
       ],
       platform: {
-        text: "Gli studenti lavorano in <b>Music Studio</b>, direttamente nel browser: sperimentano da soli ritmo, melodia e accordi e mettono il loro pacchetto audio su una pagina del progetto in <b>Kodland Sparks</b>. Non servono né la lettura della musica né la conoscenza di uno strumento.",
+        text: "Gli studenti lavorano in <b>Music Studio</b>, direttamente nel browser: sperimentano in autonomia con ritmo, melodia e accordi e pubblicano il loro pacchetto audio su una pagina del progetto in <b>Kodland Sparks</b>. Non occorre saper leggere la musica né suonare uno strumento.",
         tools: ["Music Studio", "Kodland Sparks · Pagina del progetto"],
         tour: "music",
-        tourText: "Apri Studio, avvia un brano da una base e guarda come si uniscono melodia, batteria e tempo."
+        tourText: "Apri Studio, crea un brano a partire da una base e osserva come si combinano melodia, batteria e tempo."
       }
     },
 
@@ -208,7 +208,7 @@ window.MC_CONTENT = {
       label: "Corso creativo",
       tagline: "Disegna la grafica di un gioco runner: un eroe, una ricompensa, ostacoli e nemici.",
       facts: [["Lezioni", "5"], ["Durata della lezione", "60 min"], ["Livello", "Principiante"], ["Piattaforma", "Pixel Studio (nel browser) + Kodland Sparks"]],
-      story: "<p>Gli studenti imparano la <b>pixel art</b> realizzando la grafica di un <b>gioco runner</b>. Iniziano con una semplice animazione di una moneta-ricompensa. Poi progettano un <b>eroe in stile anime</b>, lo disegnano e lo fanno muovere. Quindi disegnano ostacoli e nemici e, alla fine, mettono tutta la grafica su una pagina del progetto in Sparks.</p><p>Lavorano in <b>Pixel Studio</b> direttamente nel browser. <b>Non serve alcuna esperienza di disegno.</b> Alla fine, ogni studente ha una serie completa di grafiche di gioco: un eroe, una ricompensa, ostacoli e nemici.</p>",
+      story: "<p>Gli studenti imparano la <b>pixel art</b> realizzando la grafica di un <b>gioco runner</b>. Iniziano con una semplice animazione di una moneta da raccogliere come ricompensa. Poi progettano un <b>eroe in stile anime</b>, lo disegnano e lo fanno muovere. Quindi disegnano ostacoli e nemici e, alla fine, mettono tutta la grafica su una pagina del progetto in Sparks.</p><p>Lavorano in <b>Pixel Studio</b> direttamente nel browser. <b>Non serve alcuna esperienza di disegno.</b> Alla fine, ogni studente ha una serie completa di grafiche di gioco: un eroe, una ricompensa, ostacoli e nemici.</p>",
       outcomes: [
         "Disegnare oggetti in pixel a partire da forme semplici e lavorare con una palette limitata.",
         "Aggiungere ombre, luci e dithering.",
@@ -219,26 +219,26 @@ window.MC_CONTENT = {
       bo: { id: "2104", url: "https://bo.kodland.org/courses/2104" },
       programmeIntro: "5 lezioni da 60 minuti. Apri ogni lezione:",
       programme: [
-        { n: "Lezione 1", title: "Animare una moneta-ricompensa", details: [["", "Gli studenti conoscono Pixel Studio: contorno, riempimento, ombre e luci. Disegnano la propria moneta e la fanno girare in pochi fotogrammi."]] },
-        { n: "Lezione 2", title: "Eroe in stile anime", details: [["", "Gli studenti inventano un eroe, scelgono una palette e lo disegnano su una tela 64×64, partendo da un modello o da zero. Provano il dithering."]] },
-        { n: "Lezione 3", title: "Animazione dell’eroe", details: [["", "Due pose di passo per un ciclo di camminata e un’animazione idle in cui l’eroe sta fermo e respira. Gli studenti mettono insieme l’animazione come GIF."]] },
+        { n: "Lezione 1", title: "Animare una moneta da raccogliere come ricompensa", details: [["", "Gli studenti imparano a usare Pixel Studio: contorno, riempimento, ombre e luci. Disegnano la propria moneta e la fanno girare in pochi fotogrammi."]] },
+        { n: "Lezione 2", title: "Eroe in stile anime", details: [["", "Gli studenti inventano un eroe, scelgono una palette e lo disegnano su una tela di 64×64 pixel, partendo da un modello o da zero. Provano il dithering."]] },
+        { n: "Lezione 3", title: "Animazione dell’eroe", details: [["", "Gli studenti realizzano due pose per un ciclo di camminata e un’animazione di attesa (idle) in cui l’eroe è fermo e respira. Poi assemblano i fotogrammi ed esportano l’animazione in formato GIF."]] },
         { n: "Lezione 4", title: "Ostacoli e nemici", details: [["", "Gli studenti disegnano un ostacolo e un nemico nello stile del loro eroe, poi animano il nemico in 2–3 fotogrammi."]] },
-        { n: "Lezione 5", title: "Progetto finale: pagina del progetto", details: [["", "Gli studenti disegnano 2–3 elementi dell’ambiente e verificano che tutta la grafica usi una sola palette e una sola scala. Poi mettono tutto su una pagina del progetto in Sparks e la mostrano al tutor e agli altri studenti."]] }
+        { n: "Lezione 5", title: "Progetto finale: pagina del progetto", details: [["", "Gli studenti disegnano 2–3 elementi dell’ambiente e verificano che tutta la grafica mantenga la stessa palette di colori e la stessa scala. Poi pubblicano tutto su una pagina del progetto in Sparks e la mostrano al tutor e agli altri studenti."]] }
       ],
       build: [
-        ["🪙", "Una moneta-ricompensa animata", "Una moneta che lo studente disegna e fa girare in pochi fotogrammi."],
-        ["🧝", "Un eroe in stile anime", "Un eroe disegnato su una tela 64×64, il cui aspetto mostra il suo carattere e le sue abilità."],
-        ["🏃", "Un ciclo di camminata e un’animazione idle", "Due pose di passo per camminare e un eroe che sta fermo e respira — messi insieme come GIF."],
+        ["🪙", "Una moneta animata da raccogliere come ricompensa", "Una moneta che lo studente disegna e fa girare in pochi fotogrammi."],
+        ["🧝", "Un eroe in stile anime", "Un eroe disegnato su una tela di 64×64 pixel, il cui aspetto mostra il suo carattere e le sue abilità."],
+        ["🏃", "Un ciclo di camminata e un’animazione di attesa (idle)", "Due pose per un ciclo di camminata e un’animazione in cui l’eroe è fermo e respira, esportate in formato GIF."],
         ["👹", "Un ostacolo e un nemico", "Disegnati nello stile dell’eroe, con il nemico animato in 2–3 fotogrammi."],
-        ["🌳", "Elementi dell’ambiente", "2–3 elementi per il mondo di gioco, verificati per usare una sola palette e una sola scala."],
+        ["🌳", "Elementi dell’ambiente", "2–3 elementi per il mondo di gioco, realizzati con la stessa palette di colori e la stessa scala."],
         ["🗂️", "Una pagina del progetto in Sparks", "Tutta la grafica insieme, mostrata al tutor e agli altri studenti."]
       ],
       pl: [
-        "Ogni lezione dura <b>60 minuti</b>. Usa la tua apertura per fissare l’obiettivo della grafica di oggi — una moneta, un eroe, un’animazione, un nemico.",
-        "Gli studenti scelgono il proprio design e la propria palette. Quando ti chiamano, <b>chiedi delle loro scelte</b> prima di suggerire qualsiasi cosa: è il loro personaggio.",
-        "Studenti veloci? Le schede includono <b>sfide aggiuntive</b> — indirizzali lì durante il lavoro autonomo.",
-        "Nella <b>chiusura</b> lo studente mostra la sua animazione e tu dai un feedback specifico: la forma, la palette, il movimento — e un passo successivo.",
-        "Nella lezione 5 verifica che tutta la grafica usi <b>una sola palette e una sola scala</b> prima che lo studente la metta su una pagina del progetto in <b>Kodland Sparks</b>."
+        "Ogni lezione dura <b>60 minuti</b>. Nella fase iniziale, definisci l’elemento grafico da realizzare nella lezione: una moneta, un eroe, un’animazione o un nemico.",
+        "Gli studenti scelgono il proprio design e la propria palette. Quando ti chiedono aiuto, chiedi loro di spiegarti le proprie scelte prima di suggerire qualsiasi cosa: è il loro personaggio.",
+        "Gli studenti finiscono in anticipo? Le schede includono <b>sfide aggiuntive</b>: invitali a svolgerle durante il lavoro autonomo.",
+        "Nella <b>fase conclusiva</b> lo studente mostra la sua animazione e tu dai un feedback specifico sulla forma, sulla palette e sul movimento, indicando anche un passo successivo.",
+        "Nella lezione 5 verifica che tutta la grafica mantenga la stessa palette di colori e la stessa scala prima che lo studente la pubblichi su una pagina del progetto in <b>Kodland Sparks</b>."
       ],
       platform: {
         text: "Gli studenti disegnano in <b>Pixel Studio</b>, direttamente nel browser: lavorano pixel per pixel, aggiungono ombre, luci e dithering, aggiungono fotogrammi per animare ed esportano GIF. Alla fine creano una pagina del progetto in <b>Kodland Sparks</b>.",
@@ -249,7 +249,7 @@ window.MC_CONTENT = {
       /* Progetti degli studenti pubblicati su Kodland Sparks: href, img, tag, title, by (nickname), desc. pixel: true = immagine nitida */
       projects: [
         { href: "https://portfolio-service-production-9e98.up.railway.app/Toska/cmrlwkvqc03ohnw3fkv2hz6gn", img: "../images/proj_ruuun.gif", pixel: true, tag: "GIF", title: "Ruuun", by: "Toska",
-          desc: "Un eroe pixel in stile anime con un volto espressivo e un’animazione di camminata — l’animazione di movimento della Lezione 3." },
+          desc: "Un eroe in pixel art in stile anime, con un volto espressivo e un ciclo di camminata: un esempio dell’animazione di movimento della lezione 3." },
         { href: "https://portfolio-service-production-9e98.up.railway.app/Toska/cmrkfuvg70i3jp13f688lhyfs", img: "../images/pixel_3.gif", pixel: true, tag: "GIF", title: "monster", by: "Toska",
           desc: "Un mostro fantasma per il gioco, in tre fotogrammi: le espressioni che cambiano gli danno personalità." }
       ],
