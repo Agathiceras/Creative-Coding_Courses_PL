@@ -25,7 +25,7 @@ window.MC_CONTENT = {
 
     pl: {
       title: "Zanim zaczniesz",
-      text: "Wszystkie te kursy są prowadzone w formacie <b>Parallel Lessons (PL)</b>: ty otwierasz i zamykasz lekcję każdego ucznia, a uczniowie w międzyczasie pracują samodzielnie z kartami. To szkolenie nie tłumaczy formatu ponownie, więc <b>najpierw ukończ szkolenie Parallel Lessons</b>.",
+      text: "Wszystkie te kursy są prowadzone w formacie <b>Parallel Lessons (PL)</b>: ty otwierasz i zamykasz lekcję każdego ucznia, a uczniowie w międzyczasie pracują samodzielnie z zadaniami. To szkolenie nie tłumaczy formatu ponownie, więc <b>najpierw ukończ szkolenie Parallel Lessons</b>.",
       check: "Mam ukończone szkolenie Parallel Lessons",
       ok: "✅ Świetnie — szkolenie zostało odblokowane. Przewiń w dół, aby zacząć.",
       locked: "Najpierw ukończ szkolenie Parallel Lessons, a potem zaznacz pole powyżej, aby odblokować to szkolenie."
@@ -102,11 +102,11 @@ window.MC_CONTENT = {
       facts: [["Lekcje", "5"], ["Czas lekcji", "60 min"], ["Poziom", "Początkujący — bez doświadczenia w programowaniu"], ["Platforma", "AI Vibe Coding w Kodland Sparks"]],
       story: "<p>Uczniowie budują swoją <b>pierwszą grę typu runner z pomocą AI</b> i uczą się, jak działa programowanie z AI. Uczą się pisać <b>jasne prompty</b>, które AI zamienia w kod, i dodają do gry nowe funkcje.</p><p><b>Nie trzeba uczyć się składni</b>: uczniowie testują wynik, opisują błąd i proszą AI o jego poprawienie. Wszystko dzieje się w <b>AI Vibe Coding w Kodland Sparks</b>. Nie trzeba mieć doświadczenia w programowaniu. Na koniec każdy uczeń ma grę z własnym stylem, bohaterem i otoczeniem, podzieloną na <b>HTML, CSS i JavaScript</b>, oraz stronę projektu w Sparks.</p>",
       outcomes: [
-        "Pisać jasne prompty i dzielić duże zadanie na małe.",
-        "Zbudować z pomocą AI działającą grę w przeglądarce: skok, przeszkody, wynik, Game Over i Restart.",
-        "Znajdować błędy i naprawiać je w rozmowie z AI.",
-        "Rozumieć, do czego służą HTML, CSS i JavaScript.",
-        "Opublikować grę i stworzyć stronę projektu w Sparks."
+        "Pisanie jasnych promptów i umiejętność dzielenia dużych zadań na małe.",
+        "Zbudowanie z pomocą AI działającej gry w przeglądarce: z wykorzystaniem skakania, przeszkód, wyniku, Game Over i Restartu.",
+        "Znajdowanie błędów i naprawa ich w rozmowie z AI.",
+        "Rozumienie, do czego służą HTML, CSS i JavaScript.",
+        "Opublikowanie gry i stworzenie strony projektu w Sparks."
       ],
       bo: { id: "2101", url: "https://bo.kodland.org/courses/2101" },
       programmeIntro: "5 lekcji po 60 minut. Otwórz każdą lekcję:",
@@ -157,12 +157,12 @@ window.MC_CONTENT = {
       facts: [["Wiek", "8–9"], ["Lekcje", "5"], ["Czas lekcji", "60 min"], ["Poziom", "Początkujący"], ["Platforma", "Minecraft Java Edition (launcher Kodland)"]],
       story: "<p>Uczniowie uczą się <b>nauki, przeprowadzając eksperymenty w Minecrafcie</b>. W jednym świecie kampusu zamieniają piasek w szkło, a lawę w kamień, sprawdzają, jak rzeczy się ślizgają i spadają, uprawiają rośliny i skaczą po Księżycu. Za każdym razem stosują <b>metodę naukową</b>: zadają pytanie, zgadują odpowiedź, przeprowadzają eksperyment i sprawdzają wynik.</p><p>Na niektórych lekcjach uczniowie używają <b>artefaktów</b>. Artefakt to mały datapack, który zmienia jedną z zasad świata, na przykład tempo czasu lub grawitację. Uczniowie zmieniają jedną liczbę i patrzą, co się dzieje. Na ostatniej lekcji tworzą własny artefakt z szablonu.</p><p>Uczniowie grają w <b>Minecraft Java Edition</b> w launcherze Kodland. Nie trzeba mieć doświadczenia w naukach ani w programowaniu. Na koniec każdy uczeń ma własny eksperyment, artefakt i raport na stronie projektu w Sparks.</p>",
       outcomes: [
-        "Stosować metodę naukową: zadać pytanie, postawić hipotezę, przeprowadzić eksperyment i wyciągnąć wniosek.",
-        "Wyjaśniać, jak zmieniają się materiały, gdy je podgrzewamy lub mieszamy z wodą.",
-        "Badać siły i ruch: tarcie, spadanie, odbijanie się i prędkość.",
-        "Wyjaśniać, czego potrzebują rośliny do wzrostu i jak zwierzęta w łańcuchu pokarmowym od siebie zależą.",
-        "Porównywać grawitację na Ziemi, Księżycu i Marsie oraz sprawdzać, jakie skały i rudy leżą na jakiej głębokości.",
-        "Stworzyć artefakt z szablonu i opublikować go z raportem z eksperymentu w Sparks."
+        "Stosowanie metody naukowej: zadawanie pytań, postawienie hipotezy, przeprowadzenie eksperymentu i wyciąganie wniosków.",
+        "Wyjaśnianie, jak zmieniają się materiały, gdy je podgrzewamy lub mieszamy z wodą.",
+        "Badanie siły i ruchu: tarcie, spadanie, odbijanie się i prędkość.",
+        "Wyjaśnianie, czego potrzebują rośliny do wzrostu i jak zwierzęta w łańcuchu pokarmowym od siebie zależą.",
+        "Porównywanie grawitacji na Ziemi, Księżycu i Marsie oraz sprawdzanie, jakie skały i rudy leżą na jakiej głębokości.",
+        "Stworzenie artefaktu z szablonu i opublikowanie go z raportem z eksperymentu w Sparks."
       ],
       bo: { id: "2186", url: "https://bo.kodland.org/courses/2186", note: "W BO pierwsze lekcje tego kursu zostaną dodane 2 listopada 2026 r." },
       programmeIntro: "5 lekcji po 60 minut. Otwórz każdą lekcję:",
