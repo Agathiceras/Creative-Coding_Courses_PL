@@ -18,14 +18,14 @@ window.MC_CONTENT = {
     kicker: "Szkolenie dla tutorów · Multi-courses",
     title1: "Creative",
     title2: "Courses",
-    lead: "Poznaj trzy kreatywne mini-kursy, które mogą wybrać twoi uczniowie: <b>Video Creation</b>, <b>Sound Design</b> i <b>Pixel Art</b>. Przy każdym zobaczysz opowieść o kursie, lekcje, platformę — i wypróbujesz go na Kodland Sparks.",
+    lead: "Poznaj trzy kreatywne mini-kursy, spośród których Twoi uczniowie mogą wybrać coś dla siebie: <b>Video Creation</b>, <b>Sound Design</b> i <b>Pixel Art</b>. Przyjrzysz się każdemu z nich — poznasz jego tematykę, lekcje i platformę, a następnie wypróbujesz kurs na Kodland Sparks.",
     strip: ["Najpierw ukończ szkolenie PL", "Czym są mini-kursy", "Poznaj 3 kursy", "Rozwiąż test w LMS"],
     flipHint: "Dotknij, aby obrócić",
     progress: "{done}/{total} obejrzanych kursów",
 
     pl: {
       title: "Zanim zaczniesz",
-      text: "Wszystkie te kursy są prowadzone w formacie <b>Parallel Lessons (PL)</b>: ty otwierasz i zamykasz lekcję każdego ucznia, a uczniowie w międzyczasie pracują samodzielnie z kartami. To szkolenie nie tłumaczy formatu ponownie, więc <b>najpierw ukończ szkolenie Parallel Lessons</b>.",
+      text: "Wszystkie te kursy są prowadzone w formacie <b>Parallel Lessons (PL)</b>: ty otwierasz i zamykasz lekcję każdego ucznia, a uczniowie w międzyczasie pracują samodzielnie z zadaniami. To szkolenie nie tłumaczy formatu ponownie, więc <b>najpierw ukończ szkolenie Parallel Lessons</b>.",
       check: "Mam ukończone szkolenie Parallel Lessons",
       ok: "✅ Świetnie — szkolenie zostało odblokowane. Przewiń w dół, aby zacząć.",
       locked: "Najpierw ukończ szkolenie Parallel Lessons, a potem zaznacz pole powyżej, aby odblokować to szkolenie."
@@ -162,11 +162,11 @@ window.MC_CONTENT = {
       facts: [["Lekcje", "5"], ["Czas lekcji", "60 min"], ["Poziom", "Początkujący"], ["Platforma", "Music Studio (w przeglądarce)"]],
       story: "<p>Uczniowie uczą się <b>projektowania dźwięku</b>, tworząc cały dźwięk do <b>gry typu runner</b>: muzykę menu, dźwięki zdarzeń, główny motyw poziomu i motywy o różnym nastroju.</p><p><b>Najpierw tworzą, a teorię poznają przy okazji</b>: sami wypróbowują rytm, melodię i akordy w <b>Music Studio</b>, prosto w przeglądarce. <b>Nie trzeba umieć czytać nut ani grać na instrumencie.</b> Na koniec każdy uczeń ma <b>gotowy pakiet audio</b> do runnera i stronę projektu w Sparks.</p>",
       outcomes: [
-        "Budować rytm i melodię w Music Studio bez czytania nut.",
-        "Tworzyć krótkie dźwięki, które mówią graczowi, co się stało: skok, nagrodę, błąd.",
-        "Zmieniać nastrój utworu za pomocą akordów i basu.",
-        "Dopracowywać utwór: słuchać, porównywać wersje, usuwać to, co zbędne.",
-        "Opublikować pakiet audio i stworzyć stronę projektu w Sparks."
+        "Budowanie rytmu i melodii w Music Studio bez czytania nut.",
+        "Tworzenie krótkich dźwięków, które mówią graczowi, co się wydarzyło w grze, np.: skakanie, zdobycie nagrody, jakiś błąd.",
+        "Zmienianie nastroju utworu za pomocą akordów i basu.",
+        "Dopracowywanie swoich kompozycji przez słuchanie, porównywanie wersji i usuwanie zbędnych elementów.",
+        "Przygotowanie i opublikowanie pakietu audio oraz stworzenie strony projektu w Sparks."
       ],
       bo: { id: "2105", url: "https://bo.kodland.org/courses/2105" },
       programmeIntro: "5 lekcji po 60 minut. Otwórz każdą lekcję:",
@@ -210,11 +210,11 @@ window.MC_CONTENT = {
       facts: [["Lekcje", "5"], ["Czas lekcji", "60 min"], ["Poziom", "Początkujący"], ["Platforma", "Pixel Studio (w przeglądarce) + Kodland Sparks"]],
       story: "<p>Uczniowie uczą się <b>pixel artu</b>, tworząc grafikę do <b>gry typu runner</b>. Zaczynają od prostej animacji monety-nagrody. Potem projektują <b>bohatera w stylu anime</b>, rysują go i animują. Następnie rysują przeszkody i przeciwników, a na końcu umieszczają całą grafikę na stronie projektu w Sparks.</p><p>Pracują w <b>Pixel Studio</b> prosto w przeglądarce. <b>Nie trzeba umieć rysować.</b> Na koniec każdy uczeń ma gotowy zestaw grafik do gry: bohatera, nagrodę, przeszkody i przeciwników.</p>",
       outcomes: [
-        "Rysować obiekty z pikseli na podstawie prostych kształtów i pracować z ograniczoną paletą.",
-        "Dodawać cienie, światła i dithering.",
-        "Zaprojektować bohatera w stylu anime, którego wygląd pokazuje jego charakter i zdolności.",
-        "Tworzyć animację klatka po klatce i eksportować ją jako GIF.",
-        "Opublikować zestaw grafik do gry i stworzyć stronę projektu w Sparks."
+        "Rysowanie obiektów z pikseli na podstawie prostych kształtów i praca z ograniczoną paletą.",
+        "Dodawanie cieni, światła i ditheringu.",
+        "Stworzenie bohatera w stylu anime, którego wygląd pokazuje jego charakter i zdolności.",
+        "Tworzenie animacji klatka po klatce i eksportowanie jej jako GIF.",
+        "Opublikowanie zestawu grafik do gry i stworzenie strony projektu w Sparks."
       ],
       bo: { id: "2103", url: "https://bo.kodland.org/courses/2103" },
       programmeIntro: "5 lekcji po 60 minut. Otwórz każdą lekcję:",
