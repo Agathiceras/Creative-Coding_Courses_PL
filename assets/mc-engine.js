@@ -11,9 +11,42 @@
   const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, k) => v[k] !== undefined ? v[k] : m);
 
   /* ---------- progress (saved in this browser) ---------- */
-  let S = { pl:false, open:0, seen:{}, tours:{}, finished:false };
-  try { const saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) S = Object.assign(S, saved); } catch(e){}
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} };
+  /* ---------- Safe storage ----------
+     Inside the LMS iframe the browser treats this site's storage as third-party:
+     Safari and strict privacy settings can block or wipe it. Every value is kept
+     in memory + localStorage + sessionStorage and reads never throw, so the
+     training keeps its progress for the whole visit even when storage is blocked. */
+  const STORE = (function(){
+    const mem = {};
+    function areas(){ const a = []; try { a.push(window.localStorage); } catch(e){} try { a.push(window.sessionStorage); } catch(e){} return a; }
+    return {
+      get(k){ for (const st of areas()){ try { const v = st.getItem(k); if (v !== null) return v; } catch(e){} } return Object.prototype.hasOwnProperty.call(mem, k) ? mem[k] : null; },
+      getAll(k){ const out = []; for (const st of areas()){ try { const v = st.getItem(k); if (v !== null) out.push(v); } catch(e){} } if (Object.prototype.hasOwnProperty.call(mem, k)) out.push(mem[k]); return out; },
+      set(k, v){ v = String(v); mem[k] = v; for (const st of areas()){ try { st.setItem(k, v); } catch(e){} } },
+      remove(k){ delete mem[k]; for (const st of areas()){ try { st.removeItem(k); } catch(e){} } }
+    };
+  })();
+  // Progress only moves forward: a step done anywhere stays done.
+  const mergeS = (a, b) => ({ pl:!!(a.pl || b.pl), open:('open' in a ? a.open : b.open) || 0,
+    seen:Object.assign({}, b.seen, a.seen), tours:Object.assign({}, b.tours, a.tours), finished:!!(a.finished || b.finished) });
+  let S = null;
+  STORE.getAll(KEY).forEach(raw => { try { const saved = JSON.parse(raw || 'null'); if (saved) S = S ? mergeS(S, saved) : mergeS(saved, {}); } catch(e){} });
+  S = Object.assign({ pl:false, open:0, seen:{}, tours:{}, finished:false }, S || {});
+  const save = () => { STORE.set(KEY, JSON.stringify(S)); lmsSync(); };
+
+  /* ---------- LMS bridge ----------
+     Talks to the LMS (parent frame) via postMessage. Outside an iframe it does nothing.
+     Training -> LMS: {source:'kodland-training', training, lang, event:'ready'|'progress'|'completed', progress, done, total}
+     The LMS unlocks the test (DST) when it receives 'completed' ("Material first, then the test" on):
+     that happens when the tutor clicks "Finish the training" in the last course. */
+  const IN_LMS = (function(){ try { return window.parent !== window; } catch(e){ return true; } })();
+  let lmsReady = false, completedSent = false;
+  function lmsSend(event){
+    try { if (!IN_LMS || !lmsReady) return;
+      window.parent.postMessage({ source:'kodland-training', training:'pl-' + C.track, lang:C.lang || 'en', event,
+        progress:S, done:C.courses.filter(c => S.seen[c.id]).length, total:C.courses.length }, '*'); } catch(e){}
+  }
+  function lmsSync(){ if (!lmsReady) return; lmsSend('progress'); if (!completedSent && S.finished){ completedSent = true; lmsSend('completed'); } }
   const seenCount = () => C.courses.filter(c => S.seen[c.id]).length;
 
   document.title = U.pageTitle;
@@ -234,5 +267,6 @@
   function renderFinal(){ $('#sec-final').style.display = S.finished ? '' : 'none'; }
 
   if (S.open >= C.courses.length) S.open = 0;
+  lmsReady = true; lmsSend('ready'); lmsSync();
   renderGate(); renderCourse(); renderFinal();
 })();
