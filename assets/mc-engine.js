@@ -43,10 +43,13 @@
   let lmsReady = false, completedSent = false;
   function lmsSend(event){
     try { if (!IN_LMS || !lmsReady) return;
-      window.parent.postMessage({ source:'kodland-training', training:'pl-' + C.track, lang:C.lang || 'en', event,
-        progress:S, done:C.courses.filter(c => S.seen[c.id]).length, total:C.courses.length }, '*'); } catch(e){}
+      window.parent.postMessage(Object.assign({ source:'kodland-training', training:'pl-' + C.track, lang:C.lang || 'en', event,
+        progress:S, done:C.courses.filter(c => S.seen[c.id]).length, total:C.courses.length }, window.TD_TIME_FIELDS ? window.TD_TIME_FIELDS() : {}), '*'); } catch(e){}
   }
   function lmsSync(){ if (!lmsReady) return; lmsSend('progress'); if (!completedSent && S.finished){ completedSent = true; lmsSend('completed'); } }
+  // Time per course (assets/td-time.js): this engine runs inside a closure, so it tells the time script what it needs.
+  window.TD_TIME_ADAPTER = { training:() => 'pl-' + C.track, lang:() => C.lang || 'en', modules:() => C.courses.map(c => c.id),
+    current:() => (S.pl && !S.finished && C.courses[S.open]) ? C.courses[S.open].id : '', done:() => !!S.finished, send:e => lmsSend(e) };
   const seenCount = () => C.courses.filter(c => S.seen[c.id]).length;
 
   document.title = U.pageTitle;
